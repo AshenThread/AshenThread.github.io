@@ -98,20 +98,22 @@ header {
     align-items: center;
     text-align: left;
     padding: 0.6rem 0.8rem;
-    padding: auto;
   }
 
     /* Smaller logo on mobile, aligned left */
     .logo {
         max-height: 2.8rem;
         margin: 0;
-        padding-top: 0.3rem;
-    }  /* Show hamburger on the right */
+    }
+
+  /* Show hamburger on the right */
   .nav-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.4rem;
     padding: 0.5rem 0.8rem;
-    padding-bottom: 0.3rem;
+    line-height: 1;
   }
 
   /* Collapse nav links by default */
