@@ -51,9 +51,10 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem;
+  padding: 1.2rem;
     background-color: #8C8274;
     color: white;
+    margin-bottom: 2rem;
     border-radius: 1rem;
 }
 
@@ -99,20 +100,17 @@ header {
     padding: 0.6rem 0.8rem;
   }
 
-    /* Smaller logo on mobile, aligned left */
-    .logo {
-        max-height: 2.8rem;
-        margin: 0;
-    }
+  /* Smaller logo on mobile, aligned left */
+  .logo {
+    max-height: 2.8rem;
+    margin: 0;
+  }
 
   /* Show hamburger on the right */
   .nav-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     font-size: 1.4rem;
     padding: 0.5rem 0.8rem;
-    line-height: 1;
   }
 
   /* Collapse nav links by default */
@@ -140,6 +138,11 @@ header {
     font-size: 1.05rem;
     padding: 0.7rem 1.2rem;
   }
+
+  body {
+    padding: 0.5rem;
+  }
+}
 
 footer {
     margin-top: auto;
@@ -1769,5 +1772,6 @@ li a:hover {
     font-size: 1rem;
     padding: 0.9rem 1.5rem;
   }
-}   
 }
+
+/* Fin estilos overlay */
