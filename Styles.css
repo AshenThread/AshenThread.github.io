@@ -55,7 +55,7 @@ header {
     background-color: #8C8274;
     color: white;
     margin-bottom: 2rem;
-    border-radius: 1rem;
+    border-radius: 1rem;;
 }
 
 .navbar {
@@ -98,6 +98,7 @@ header {
     align-items: center;
     text-align: left;
     padding: 0.6rem 0.8rem;
+    padding-top: 1rem;
   }
 
   /* Smaller logo on mobile, aligned left */
