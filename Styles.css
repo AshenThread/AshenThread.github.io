@@ -90,6 +90,12 @@ header {
     align-self: flex-start;
 }
 
+.logo-link {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 0;
+}
+
 @media (max-width: 600px) {
   /* Keep header row layout, shrink paddings */
   header {
