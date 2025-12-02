@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - AshenThread</title>
+    <link rel="shortcut icon" href="1x/AsTh Blanco.png" type="image/x-icon">
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="main.js" defer></script>
+</head>
+<body class="inter-font">
+    <header>
+        <img src="1x/Artboard 1.png" class="logo" alt="Logo AshenThreads">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Menu">☰</button>
+        <nav class="navbar" id="primary-navigation">
+            <div class="nav-links">
+                <a href="Homepage.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="contacto.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="inter-font animate__animated animate__fadeIn">
+        <h1>Portfolio <img src="1x/Artboard 2.png" class="h1 logo" alt=""></h1>
+        <p>A showcase of my creative work across multiple disciplines</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="inter-font about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="profile-header">
+                <img src="1x/Perfil2026.jpg" alt="Ismael Zambrano" class="profile-photo">
+                <div class="profile-info">
+                    <h3 class="profile-name">Ismael Zambrano</h3>
+                    <p class="profile-title">Interactive Media Student | UI/UX Designer | Game Designer | Motion Graphics Artist</p>
+                </div>
+            </div>
+            
+            <div class="about-text">
+                <h3>Who I Am</h3>
+                <p>
+                    I'm a passionate creative currently studying Interactive Media at Universidad San Francisco de Quito (USFQ), in my 3rd semester. My journey into the creative world came after spending 2 years studying General Psychology at UISEK, which gave me a unique perspective on user behavior and human-centered design. Since then, I've been honing my skills in UI/UX design, motion graphics, game design, and web development, driven by a love for crafting immersive digital experiences. Aslo a fan of horror games, I enjoy exploring how atmosphere and storytelling can enhance user engagement.
+                </p>
+                
+                <h3>Education</h3>
+                <p>
+                    <strong>Universidad San Francisco de Quito (USFQ)</strong> - Interactive Media (3rd Semester)<br>
+                    Specializing in UI/UX design, motion graphics, game design, and web development.
+                </p>
+                <p>
+                    <strong>UISEK</strong> - General Psychology (2 years)<br>
+                    Developed strong foundations in understanding human behavior, cognition, and user psychology.
+                </p>
+                <strong>UX Design Course</strong> - Completed an intensive UX Design course covering user research, wireframing, prototyping, and usability testing by Google on coursera.
+                
+                <h3>Skills & Tools</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">B2 English</span>
+                    <span class="skill-tag">Unity</span>
+                    <span class="skill-tag">After Effects (High)</span>
+                    <span class="skill-tag">Illustrator (Advanced)</span>
+                    <span class="skill-tag">Photoshop (Basic)</span>
+                    <span class="skill-tag">Premiere Pro</span>
+                    <span class="skill-tag">HTML/CSS/JavaScript</span>
+                    <span class="skill-tag">UI/UX Design</span>
+                    <span class="skill-tag">Game Design</span>
+                    <span class="skill-tag">Level Design</span>
+                </div>
+
+                <h3>Hobbies & Interests</h3>
+                <ul class="achievements-list">
+                    <li>Gaming and analyzing game mechanics and user interfaces</li>
+                    <li>Creating motion graphics and visual effects for personal projects</li>
+                    <li>Exploring horror game design and atmospheric storytelling</li>
+                    <li>Learning new design tools and techniques</li>
+                    <li>Watching and deconstructing animated films and series</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="inter-font">
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="unity">Unity UI</button>
+            <button class="filter-btn" data-filter="motion">Motion Graphics</button>
+            <button class="filter-btn" data-filter="web">Web Design</button>
+            <button class="filter-btn" data-filter="game">Game Design</button>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="inter-font">
+        <div class="portfolio-grid">
+            
+            <!-- PROYECTO UNITY 1 -->
+            <div class="portfolio-item" data-category="unity game">
+                <div class="portfolio-image">
+                   <img src="Imagenes/Unity_IMG/LuzYRenderUN.png" alt="Rendered Unity Scene">
+                    <div class="portfolio-overlay">
+                        <h3>Light and Render Unity</h3>
+                        <p>Project focused on <strong>baked and mixed lighting</strong> techniques to optimize performance across all game types, especially <strong>3D games with URP</strong>. Also involved using and modifying <strong>assets</strong> to enhance in-game performance and visual quality.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">Level Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN PROYECTO UNITY 1 -->
+
+            <!-- PROYECTO UNITY 2 -->
+            <div class="portfolio-item" data-category="unity game">
+                <div class="portfolio-image">
+                    <img src="Imagenes/Unity_IMG/LevelD1.png" alt="Unity Level Design">
+                    <div class="portfolio-overlay">
+                        <h3>3D Level Design</h3>
+                        <p>Created an <strong>artificial environment</strong> featuring an old house filled with various furniture assets. This project aimed to develop <strong>level design skills</strong> essential for working in the gaming industry, focusing on <strong>spatial composition</strong> and asset integration.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">Level Design</span>
+                            <span class="tag">3D</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN PROYECTO UNITY 2 -->
+
+            <!-- PROYECTO UNITY 3 -->
+            <div class="portfolio-item" data-category="unity game">
+                <div class="portfolio-image">
+                    <img src="Imagenes/Unity_IMG/GameMecanics1.png" alt="Game Mechanics">
+                    <div class="portfolio-overlay">
+                        <h3>Game Mechanics</h3>
+                        <p>Simulated <strong>material physics</strong> and <strong>3D object collisions</strong> in an artificial environment. This <strong>play-and-watch</strong> style project required strong data skills to perform accurate calculations, observing how objects react based on their <strong>mass and collision properties</strong>.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">Game Design</span>
+                            <span class="tag">Mechanics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN PROYECTO UNITY 3 -->
+             <div class="portfolio-item" data-category="unity game">
+                <div class="portfolio-image">
+                    <img src="Imagenes/Unity_IMG/Slenderman1UN.png" alt="Game Mechanics">
+                    <div class="portfolio-overlay">
+                        <h3>Horror Game</h3>
+                        <p><strong>Survival Horror Slenderman Game</strong> implementing <strong>suspense and ambience mechanics</strong>. This ongoing project consolidates everything learned in game design so far. One of the most interesting implementations was a <strong>footstep audio script</strong> that adapts to different terrain types.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">Game Design</span>
+                            <span class="tag">Mechanics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+
+            <!-- ========================================
+                 PROYECTOS DE MOTION GRAPHICS
+                 Para añadir más: Copia un bloque completo
+                 y cambia data-category="motion"
+                 ======================================== -->
+
+            <!-- PROYECTO MOTION 1 -->
+            <div class="portfolio-item" data-category="motion">
+                <div class="portfolio-image">
+                    <img src="Imagenes/Motion_IMG/ScreenShotReelMG.png" alt="Motion Graphics Project">
+                    <div class="portfolio-overlay">
+                        <h3>Motion Graphics Reel</h3>
+                        <p><strong>Eco-friendly themed</strong> reel showcasing various digital animation techniques including <strong>liquid and gravity simulation</strong>. Created assets in Illustrator and developed <strong>visual narratives</strong> to convey environmental messages, with complete <strong>post-production</strong> in After Effects.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">After Effects</span>
+                            <span class="tag">Animation</span>
+                            <span class="tag">Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN PROYECTO MOTION 1 -->
+
+            <!-- PROYECTO MOTION 2 - Placeholder -->
+            
+            <a href="https://www.youtube.com/@IsmaelZUSFQMI" target="_blank" rel="noopener noreferrer" class="portfolio-card-link">
+                <div class="portfolio-item" data-category="motion">
+                    <div class="portfolio-image">
+                        <img src="Imagenes/Motion_IMG/LenonesMarinosMG.png" alt="Leones Marinos Galapagos">
+                        <div class="portfolio-overlay">
+                            <h3>Leones Marinos Galapagos</h3>
+                            <p><strong>Mid-semester real client project</strong>. Three YouTube clips were selected for the <strong>Galapagos Sea Lions campaign</strong> thanks to their <strong>high technical level</strong> and asset development following strict <strong>brand and color guidelines</strong>.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">After Effects</span>
+                                <span class="tag">Animation</span>
+                                <span class="tag">Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+
+            <!-- ========================================
+                 PROYECTOS WEB
+                 Para añadir más: data-category="web"
+                 ======================================== -->
+
+            <!-- PROYECTO WEB 1 - Placeholder -->
+            <div class="portfolio-item" data-category="web">
+                <div class="portfolio-image">
+                    <img src="Imagenes/Web_IMG/Portafolio Web1 IZ.png" alt="Moodboard Web Design">
+                    <div class="placeholder-project">
+                        <div class="placeholder-icon">🌐</div>
+                        <h3>Web Platform</h3>
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h3>Responsive Website</h3>
+                        <p>This very website showcases <strong>full accessibility and control</strong> across desktop and mobile. All interactions remain consistent while the <strong>experience adapts</strong> to the user's screen size. Also features the <strong>design and branding concept</strong> of AshenThread studio presented throughout this portfolio.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN PROYECTO WEB 1 -->
+
+            <!-- ========================================
+                 INSTRUCCIONES DE CATEGORÍAS>
+            Categorías disponibles:
+            - "unity" = Solo Unity
+            - "motion" = Solo Motion Graphics
+            - "web" = Solo Web
+            - "game" = Solo Game Design
+            - "unity game" = Aparece en Unity Y Game Design
+            - "web unity" = Aparece en Web Y Unity
+            (Puedes combinar categorías separadas por espacios)
+                 ======================================== -->
+
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="inter-font cta-section">
+        <h2>Interested in Working Together?</h2>
+        <p>Let's create something amazing. Get in touch to discuss your project.</p>
+        <a href="contacto.html" class="cta-button">Contact Me</a>
+    </section>
+
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <footer>
+        <p>&copy; 2026 AshenThread.
+            <img src="1x/Artboard 2.png" class="footer-logo" alt="AshenThreads isotype">
+        </p>
+    </footer>
+
+    <script>
+        // Portfolio filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filter === 'all') {
+                        item.style.display = 'block';
+                        item.style.animation = 'fadeIn 0.5s ease-in';
+                    } else {
+                        const categories = item.getAttribute('data-category').split(' ');
+                        if (categories.includes(filter)) {
+                            item.style.display = 'block';
+                            item.style.animation = 'fadeIn 0.5s ease-in';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
