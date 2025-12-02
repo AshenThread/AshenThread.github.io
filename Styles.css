@@ -100,13 +100,12 @@ header {
     padding: 0.6rem 0.8rem;
   }
 
-  /* Smaller logo on mobile, aligned left */
-  .logo {
-    max-height: 2.8rem;
-    margin: 0;
-  }
-
-  /* Show hamburger on the right */
+    /* Smaller logo on mobile, aligned left */
+    .logo {
+        max-height: 2.8rem;
+        margin: 0;
+        padding-top: 0.3rem;
+    }  /* Show hamburger on the right */
   .nav-toggle {
     display: block;
     font-size: 1.4rem;
@@ -345,6 +344,15 @@ h3 {
     color: #D9D2C5;
     font-size: 48px;
     display: block;
+}
+
+/* PNG icon support inside card-icon */
+.expertise-card .card-icon img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  display: block;
+  filter: brightness(1.05) contrast(0.98);
 }
 
 .expertise-card-link:hover .expertise-card .card-icon,
