@@ -72,7 +72,7 @@
             <h2>Send Me a Message</h2>
             <p class="form-subtitle">Fill out the form below and I'll get back to you as soon as possible</p>
             
-            <form class="contact-form" id="contactForm" action="#" method="POST">
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/mgvgynvv" method="POST">
                 
                 <!-- Name Field -->
                 <div class="form-group">
@@ -224,41 +224,17 @@
         const errorMessage = document.getElementById('errorMessage');
 
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Hide previous messages
-            successMessage.style.display = 'none';
-            errorMessage.style.display = 'none';
-            
             // Check if at least one service is selected
             const checkboxes = document.querySelectorAll('input[name="services"]:checked');
             
             if (checkboxes.length === 0) {
+                e.preventDefault();
                 errorMessage.style.display = 'block';
                 errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 return;
             }
             
-            // Get form data
-            const formData = new FormData(contactForm);
-            
-            // Here you would normally send the data to a server
-            // For now, we'll just show a success message
-            console.log('Form submitted with data:');
-            for (let [key, value] of formData.entries()) {
-                console.log(key + ': ' + value);
-            }
-            
-            // Show success message
-            successMessage.style.display = 'block';
-            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            
-            // Optional: Reset form after 3 seconds
-            setTimeout(() => {
-                contactForm.reset();
-                messageGroup.style.display = 'none';
-                successMessage.style.display = 'none';
-            }, 3000);
+            // If validation passes, form will be submitted to Formspree
         });
     </script>
 </body>
