@@ -384,27 +384,27 @@
         </div>
         <!-- Admin: Formulario interno para generar tarjetas (local only) -->
         <div class="guide-admin">
-            <button id="toggle-admin" class="guide-admin-toggle">Mostrar formulario (local)</button>
+            <button id="toggle-admin" class="guide-admin-toggle" data-i18n="form_toggle">Mostrar formulario (local)</button>
             <div id="project-editor" class="project-editor" hidden>
-                <p class="admin-note">Este formulario genera el HTML localmente y puede insertar la tarjeta en la vista o copiar el fragmento para revisión. No publica nada automáticamente en GitHub.</p>
+                <p class="admin-note" data-i18n="form_note">Este formulario genera el HTML localmente y puede insertar la tarjeta en la vista o copiar el fragmento para revisión. No publica nada automáticamente en GitHub.</p>
                 <form id="project-form">
-                    <label>Nombre del proyecto<br><input type="text" id="pf-name" required placeholder="Nombre del proyecto"></label>
-                    <label>Ruta imagen<br><input type="text" id="pf-image" required placeholder="Imagenes/Unity_IMG/mi-proyecto.png"></label>
-                    <label>Categorias (separadas por espacio)<br><input type="text" id="pf-cats" placeholder="unity ux"></label>
-                    <label>Descripcion corta<br><textarea id="pf-desc" rows="3" placeholder="Objetivo y resultado en una frase"></textarea></label>
-                    <label>Rol<br><input type="text" id="pf-role" placeholder="Rol en el proyecto"></label>
-                    <label>Herramientas (separadas por coma)<br><input type="text" id="pf-tools" placeholder="Unity, C#, After Effects"></label>
+                    <label><span data-i18n="form_name">Nombre del proyecto</span><br><input type="text" id="pf-name" required placeholder="Nombre del proyecto" data-i18n-attr="placeholder:form_name_placeholder"></label>
+                    <label><span data-i18n="form_image">Ruta imagen</span><br><input type="text" id="pf-image" required placeholder="Imagenes/Unity_IMG/mi-proyecto.png" data-i18n-attr="placeholder:form_image_placeholder"></label>
+                    <label><span data-i18n="form_cats">Categorias (separadas por espacio)</span><br><input type="text" id="pf-cats" placeholder="unity ux" data-i18n-attr="placeholder:form_cats_placeholder"></label>
+                    <label><span data-i18n="form_desc">Descripcion corta</span><br><textarea id="pf-desc" rows="3" placeholder="Objetivo y resultado en una frase" data-i18n-attr="placeholder:form_desc_placeholder"></textarea></label>
+                    <label><span data-i18n="form_role">Rol</span><br><input type="text" id="pf-role" placeholder="Rol en el proyecto" data-i18n-attr="placeholder:form_role_placeholder"></label>
+                    <label><span data-i18n="form_tools">Herramientas (separadas por coma)</span><br><input type="text" id="pf-tools" placeholder="Unity, C#, After Effects" data-i18n-attr="placeholder:form_tools_placeholder"></label>
                     <div class="admin-actions">
-                        <button type="button" id="pf-preview">Previsualizar</button>
-                        <button type="button" id="pf-generate">Generar HTML</button>
-                        <button type="button" id="pf-insert">Insertar en página</button>
-                        <button type="button" id="pf-save">Guardar localmente</button>
-                        <button type="button" id="pf-clear">Limpiar</button>
+                        <button type="button" id="pf-preview" data-i18n="form_preview">Previsualizar</button>
+                        <button type="button" id="pf-generate" data-i18n="form_generate">Generar HTML</button>
+                        <button type="button" id="pf-insert" data-i18n="form_insert">Insertar en página</button>
+                        <button type="button" id="pf-save" data-i18n="form_save">Guardar localmente</button>
+                        <button type="button" id="pf-clear" data-i18n="form_clear">Limpiar</button>
                     </div>
                 </form>
 
                 <div id="project-preview" class="project-preview" aria-live="polite"></div>
-                <label>HTML generado (copiar para revisión)<br>
+                <label><span data-i18n="form_generated_label">HTML generado (copiar para revisión)</span><br>
                 <textarea id="generated-html" class="generated-html" readonly rows="6"></textarea></label>
             </div>
         </div>
@@ -473,6 +473,16 @@
                 guide_step2_title: '2. Completa la ficha del proyecto', guide_step2_1: 'Nombre del proyecto.', guide_step2_2: 'Tipo: Unity, Motion Graphics, UI/UX, Web, Game Design, Branding.', guide_step2_3: 'Rol: que hiciste tu directamente.', guide_step2_4: 'Herramientas: Unity, C#, After Effects, Illustrator, Premiere, HTML/CSS/JS.', guide_step2_5: 'No usar Blender en la descripcion de herramientas.',
                 guide_step3_title: '3. Escribe una descripcion util', guide_step3_1: 'Objetivo: que problema resolviste.', guide_step3_2: 'Proceso: 1-2 decisiones de diseno importantes.', guide_step3_3: 'Resultado: que mejoro o que se logro.',
                 guide_step4_title: '4. Copia este template HTML',
+                form_title: 'Agregar proyecto localmente', form_note: 'Este formulario genera el HTML localmente y puede insertar la tarjeta en la vista o copiar el fragmento para revisión. No publica nada automáticamente en GitHub.',
+                form_name: 'Nombre del proyecto', form_name_placeholder: 'Nombre del proyecto',
+                form_image: 'Ruta imagen', form_image_placeholder: 'Imagenes/Unity_IMG/mi-proyecto.png',
+                form_cats: 'Categorias (separadas por espacio)', form_cats_placeholder: 'unity ux',
+                form_desc: 'Descripcion corta', form_desc_placeholder: 'Objetivo y resultado en una frase',
+                form_role: 'Rol', form_role_placeholder: 'Rol en el proyecto',
+                form_tools: 'Herramientas (separadas por coma)', form_tools_placeholder: 'Unity, C#, After Effects',
+                form_preview: 'Previsualizar', form_generate: 'Generar HTML', form_insert: 'Insertar en página', form_save: 'Guardar localmente', form_clear: 'Limpiar',
+                form_generated_label: 'HTML generado (copiar para revisión)',
+                form_toggle: 'Mostrar formulario (local)',
                 contact_title: 'Contacto', contact_desc: 'Listo para colaborar en proyectos de UI/UX, juego y motion graphics.'
             },
             en: {
@@ -515,6 +525,16 @@
                 guide_step2_title: '2. Complete project metadata', guide_step2_1: 'Project name.', guide_step2_2: 'Type: Unity, Motion Graphics, UI/UX, Web, Game Design, Branding.', guide_step2_3: 'Role: what you directly did.', guide_step2_4: 'Tools: Unity, C#, After Effects, Illustrator, Premiere, HTML/CSS/JS.', guide_step2_5: 'Do not use Blender in the tools description.',
                 guide_step3_title: '3. Write a useful description', guide_step3_1: 'Goal: what problem you solved.', guide_step3_2: 'Process: 1-2 important design decisions.', guide_step3_3: 'Outcome: what improved or what was achieved.',
                 guide_step4_title: '4. Copy this HTML template',
+                form_title: 'Add project locally', form_note: 'This form generates HTML locally and can insert the card in the view or copy the snippet for review. It does not publish anything to GitHub.',
+                form_name: 'Project name', form_name_placeholder: 'Project name',
+                form_image: 'Image path', form_image_placeholder: 'Imagenes/Unity_IMG/my-project.png',
+                form_cats: 'Categories (space-separated)', form_cats_placeholder: 'unity ux',
+                form_desc: 'Short description', form_desc_placeholder: 'Goal and outcome in one sentence',
+                form_role: 'Role', form_role_placeholder: 'Your role in the project',
+                form_tools: 'Tools (comma-separated)', form_tools_placeholder: 'Unity, C#, After Effects',
+                form_preview: 'Preview', form_generate: 'Generate HTML', form_insert: 'Insert in page', form_save: 'Save locally', form_clear: 'Clear',
+                form_generated_label: 'Generated HTML (copy for review)',
+                form_toggle: 'Show form (local)',
                 contact_title: 'Contact', contact_desc: 'Ready to collaborate on UI/UX, game, and motion graphics projects.'
             }
         };
@@ -527,6 +547,15 @@
                 if (dict[key]) {
                     node.textContent = dict[key];
                 }
+            });
+            document.querySelectorAll('[data-i18n-attr]').forEach((node) => {
+                const attrs = node.getAttribute('data-i18n-attr').split(',');
+                attrs.forEach(attr => {
+                    const [attrName, key] = attr.trim().split(':');
+                    if (dict[key]) {
+                        node.setAttribute(attrName, dict[key]);
+                    }
+                });
             });
             langBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
             localStorage.setItem('ashenthread_lang', lang);
