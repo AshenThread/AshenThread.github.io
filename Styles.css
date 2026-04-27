@@ -2308,4 +2308,135 @@ li a:hover {
   }
 }
 
+/* Project Form / Admin Styles */
+.guide-admin {
+  margin-top: 2rem;
+  padding: 1.2rem;
+  border-top: 1px solid rgba(217, 210, 197, 0.3);
+}
+
+.guide-admin-toggle {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: rgba(140, 130, 116, 0.3);
+  border: 1px solid rgba(217, 210, 197, 0.35);
+  border-radius: 8px;
+  color: #f1ebdf;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.guide-admin-toggle:hover {
+  background: rgba(140, 130, 116, 0.5);
+  border-color: rgba(217, 210, 197, 0.6);
+}
+
+.project-editor {
+  margin-top: 1rem;
+  padding: 1.2rem;
+  border: 1px solid rgba(217, 210, 197, 0.2);
+  border-radius: 10px;
+  background: rgba(8, 10, 15, 0.6);
+}
+
+.admin-note {
+  color: rgba(217, 210, 197, 0.8);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0 0 1rem 0;
+}
+
+#project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#project-form label {
+  display: flex;
+  flex-direction: column;
+  color: #f1ebdf;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+#project-form input,
+#project-form textarea {
+  margin-top: 0.3rem;
+  padding: 0.55rem 0.75rem;
+  background: rgba(13, 13, 13, 0.8);
+  border: 1px solid rgba(217, 210, 197, 0.3);
+  border-radius: 6px;
+  color: #f1ebdf;
+  font-family: Inter, sans-serif;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+#project-form input:focus,
+#project-form textarea:focus {
+  outline: none;
+  border-color: rgba(217, 210, 197, 0.6);
+  background: rgba(13, 13, 13, 0.95);
+  box-shadow: 0 0 8px rgba(217, 210, 197, 0.15);
+}
+
+#project-form input::placeholder,
+#project-form textarea::placeholder {
+  color: rgba(217, 210, 197, 0.4);
+}
+
+.admin-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.admin-actions button {
+  padding: 0.6rem 1rem;
+  background: linear-gradient(135deg, rgba(140, 130, 116, 0.4) 0%, rgba(60, 63, 64, 0.3) 100%);
+  border: 1px solid rgba(217, 210, 197, 0.4);
+  border-radius: 6px;
+  color: #f1ebdf;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-actions button:hover {
+  background: linear-gradient(135deg, rgba(140, 130, 116, 0.6) 0%, rgba(60, 63, 64, 0.5) 100%);
+  border-color: rgba(217, 210, 197, 0.7);
+  transform: translateY(-1px);
+}
+
+.project-preview {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  border: 1px dashed rgba(217, 210, 197, 0.3);
+  border-radius: 8px;
+  background: rgba(12, 14, 20, 0.5);
+  min-height: 100px;
+}
+
+.project-preview .portfolio-item {
+  margin: 0;
+}
+
+.generated-html {
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.75rem;
+  background: rgba(9, 11, 17, 0.9);
+  border: 1px solid rgba(217, 210, 197, 0.25);
+  border-radius: 6px;
+  color: #d4cdc0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  resize: vertical;
+}
+
 /* Fin estilos overlay */
