@@ -6,6 +6,8 @@
   const navLinksContainer = navbar ? navbar.querySelector('.nav-links') : null;
   const backToTop = document.querySelector('.back-to-top');
 
+  if (!header) return;
+
   let lastScroll = window.pageYOffset;
   let ticking = false;
 
@@ -41,6 +43,7 @@
 
   function onScroll() {
     const currentScroll = window.pageYOffset;
+    const scrollDelta = currentScroll - lastScroll;
 
     // Header shadow / scrolled state
     if (currentScroll > 20) {
@@ -49,10 +52,12 @@
       header.classList.remove('scrolled');
     }
 
-    // Hide header when scrolling down, show when scrolling up
-    if (currentScroll > lastScroll && currentScroll > 120) {
+    // Hide header when scrolling down, show when scrolling up.
+    // Keep it visible while mobile menu is open.
+    const navOpen = navbar && navbar.classList.contains('open');
+    if (!navOpen && scrollDelta > 8 && currentScroll > 120) {
       header.classList.add('header-hidden');
-    } else {
+    } else if (scrollDelta < -8 || currentScroll <= 30 || navOpen) {
       header.classList.remove('header-hidden');
     }
 
@@ -74,7 +79,7 @@
       window.requestAnimationFrame(onScroll);
       ticking = true;
     }
-  });
+  }, { passive: true });
 
   // Back to top smooth scroll
   if (backToTop) {

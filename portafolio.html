@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - AshenThread</title>
+    <title>Portafolio - AshenThread</title>
     <link rel="shortcut icon" href="1x/AsTh Blanco.png" type="image/x-icon">
     <link rel="stylesheet" href="Styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -13,270 +13,528 @@
     </script>
     <script src="main.js" defer></script>
 </head>
-<body class="inter-font">
+<body class="inter-font portfolio-page">
     <header>
-        <a href="index.html" class="logo-link">
-            <img src="1x/Artboard 1.png" class="logo" alt="Logo AshenThreads">
+        <a href="#inicio" class="logo-link">
+            <img src="1x/Artboard 1.png" class="logo" alt="Logo AshenThread">
         </a>
         <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Menu">☰</button>
         <nav class="navbar" id="primary-navigation">
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="contacto.html">Contact</a>
+                <a href="#inicio" data-i18n="nav_home">Inicio</a>
+                <a href="#sobre" data-i18n="nav_about">Sobre mi</a>
+                <a href="#proyectos" data-i18n="nav_projects">Proyectos</a>
+                <a href="#guia" data-i18n="nav_guide">Guia</a>
+                <a href="#contacto" data-i18n="nav_contact">Contacto</a>
             </div>
         </nav>
+        <div class="lang-switch" aria-label="Seleccion de idioma">
+            <button class="lang-btn active" data-lang="es">ES</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
     </header>
 
-    <section class="inter-font animate__animated animate__fadeIn">
-        <h1>Portfolio <img src="1x/Artboard 2.png" class="h1 logo" alt=""></h1>
-        <p>A showcase of my creative work across multiple disciplines</p>
+    <section id="inicio" class="inter-font portfolio-hero animate__animated animate__fadeIn">
+        <div class="hero-copy">
+            <p class="hero-eyebrow">AshenThread 2026</p>
+            <h1 data-i18n="hero_title">Portafolio <img src="1x/Artboard 2.png" class="h1 logo" alt=""></h1>
+            <p data-i18n="hero_desc">Diseno experiencias de juego con enfoque en tension, legibilidad y narrativa visual. Esta version integra direccion de marca y proyectos recientes de Unity, UI y motion graphics.</p>
+            <div class="hero-metrics">
+                <div>
+                    <strong>12+</strong>
+                    <span data-i18n="hero_metric_projects">Proyectos</span>
+                </div>
+                <div>
+                    <strong>4</strong>
+                    <span data-i18n="hero_metric_disciplines">Disciplinas</span>
+                </div>
+                <div>
+                    <strong>2026</strong>
+                    <span data-i18n="hero_metric_vision">Vision</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <img src="Imagenes/Unity_IMG/LuzYRenderUN.png" alt="Escena de entorno en Unity con iluminacion atmosferica">
+        </div>
     </section>
 
-    <!-- About Me Section -->
-    <section class="inter-font about-section">
-        <h2>About Me</h2>
+    <section id="sobre" class="inter-font about-section">
+        <h2 data-i18n="about_title">Sobre mi</h2>
         <div class="about-content">
             <div class="profile-header">
                 <img src="1x/Perfil2026.jpg" alt="Ismael Zambrano" class="profile-photo">
                 <div class="profile-info">
                     <h3 class="profile-name">Ismael Zambrano</h3>
-                    <p class="profile-title">Interactive Media Student | UI/UX Designer | Game Designer | Motion Graphics Artist</p>
+                    <p class="profile-title" data-i18n="about_role">Estudiante de Media Interactiva | Disenador UI/UX | Disenador de Videojuegos | Artista de Motion Graphics</p>
                 </div>
             </div>
-            
+
             <div class="about-text">
-                <h3>Who I Am</h3>
-                <p>
-                    I'm a passionate creative, currently studying Interactive Media at Universidad San Francisco de Quito (USFQ) 3rd semester. My journey into the creative world came after spending 2 years studying General Psychology at UISEK, which had given me a unique perspective on user behavior and human-centered design. Since then, I've been honing my skills in UI/UX design, motion graphics, game design, and web development, driven by a love for crafting immersive digital experiences as a Professional career. Also a fan of horror games, I enjoy exploring how atmosphere and storytelling can enhance user engagement.
-                </p>
-                
-                <h3>Education</h3>
-                <p>
-                    <strong>Universidad San Francisco de Quito (USFQ)</strong> - Interactive Media (3rd Semester)<br>
-                    Specializing in UI/UX design, motion graphics, game design, and web development.
-                </p>
-                <p>
-                    <strong>UISEK</strong> - General Psychology (2 years)<br>
-                    Developed strong foundations in understanding human behavior, cognition, and user psychology.
-                </p>
-                <strong>UX Design Course</strong> - Completed an intensive UX Design course covering user research, wireframing, prototyping, and usability testing by Google on coursera.
-                
-                <h3>Skills & Tools</h3>
+                <h3 data-i18n="about_who_title">Quien soy</h3>
+                <p data-i18n="about_who_desc">Soy un creativo enfocado en productos digitales inmersivos. Mi base en psicologia me ayuda a disenar con enfoque humano, mientras construyo identidad visual fuerte y narrativa clara.</p>
+
+                <h3 data-i18n="about_education_title">Formacion</h3>
+                <p data-i18n="about_education_1"><strong>USFQ</strong> - Media Interactiva (3er semestre). Enfoque en UI/UX, motion graphics, game design y desarrollo web.</p>
+                <p data-i18n="about_education_2"><strong>UISEK</strong> - Psicologia General (2 anos). Base en conducta, cognicion y factores humanos.</p>
+                <p data-i18n="about_education_3"><strong>Certificado UX de Google</strong> - Coursera. Investigacion de usuarios, wireframing, prototipado y testing.</p>
+
+                <h3 data-i18n="about_skills_title">Habilidades y herramientas</h3>
                 <div class="skills-list">
-                    <span class="skill-tag">B2 English</span>
+                    <span class="skill-tag">Ingles B2</span>
                     <span class="skill-tag">Unity</span>
-                    <span class="skill-tag">After Effects (High)</span>
-                    <span class="skill-tag">Illustrator (Advanced)</span>
-                    <span class="skill-tag">Photoshop (Basic)</span>
+                    <span class="skill-tag">After Effects (Alto)</span>
+                    <span class="skill-tag">Illustrator (Avanzado)</span>
+                    <span class="skill-tag">Photoshop (Basico)</span>
                     <span class="skill-tag">Premiere Pro</span>
                     <span class="skill-tag">HTML/CSS/JavaScript</span>
-                    <span class="skill-tag">UI/UX Design</span>
-                    <span class="skill-tag">Game Design</span>
-                    <span class="skill-tag">Level Design</span>
+                    <span class="skill-tag" data-i18n="skill_uiux">Diseno UI/UX</span>
+                    <span class="skill-tag" data-i18n="skill_gamedesign">Diseno de videojuegos</span>
+                    <span class="skill-tag" data-i18n="skill_leveldesign">Diseno de niveles</span>
                 </div>
-
-                <h3>Hobbies & Interests</h3>
-                <ul class="achievements-list">
-                    <li>Gaming and analyzing game mechanics and user interfaces</li>
-                    <li>Creating motion graphics and visual effects for personal projects</li>
-                    <li>Exploring horror game design and atmospheric storytelling</li>
-                    <li>Learning new design tools and techniques</li>
-                    <li>Watching and deconstructing animated films and series</li>
-                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Filter Tabs -->
-    <section class="inter-font">
-        <div class="portfolio-filters">
-            <button class="filter-btn active" data-filter="all">All Projects</button>
-            <button class="filter-btn" data-filter="unity">Unity UI</button>
-            <button class="filter-btn" data-filter="motion">Motion Graphics</button>
-            <button class="filter-btn" data-filter="web">Web Design</button>
-            <button class="filter-btn" data-filter="game">Game Design</button>
+    <section class="inter-font moodboard-section">
+        <div class="moodboard-heading">
+            <p class="hero-eyebrow" data-i18n="moodboard_eyebrow">Direccion visual</p>
+            <h2 data-i18n="moodboard_title">Moodboard AshenThread</h2>
+            <p data-i18n="moodboard_desc">La identidad visual se construye desde proyectos reales: entornos de Unity con atmosfera oscura, HUD de tension y piezas motion orientadas a narrativa.</p>
+        </div>
+
+        <div class="moodboard-grid">
+            <article class="moodboard-panel moodboard-canvas">
+                <div class="moodboard-mosaic">
+                    <img src="Imagenes/Unity_IMG/LuzYRenderUN.png" alt="Escena amplia de entorno en Unity" class="mosaic-main">
+                    <img src="Imagenes/Unity_IMG/Slenderman1UN.png" alt="Prototipo HUD de horror" class="mosaic-side">
+                    <img src="Imagenes/Motion_IMG/ScreenShotReelMG.png" alt="Trabajo de motion graphics" class="mosaic-side">
+                </div>
+            </article>
+
+            <article class="moodboard-panel moodboard-specs">
+                <h3 data-i18n="system_title">Sistema visual 2026</h3>
+                <p data-i18n="system_desc">Base oscura con contraste alto para reforzar atmosfera y jerarquia de informacion en HUD, menus y paneles de inventario.</p>
+                <div class="palette-row">
+                    <span style="background:#00010D;">#00010D</span>
+                    <span style="background:#8C8274;">#8C8274</span>
+                    <span style="background:#3C3F40;">#3C3F40</span>
+                    <span style="background:#D9D2C5; color:#111;">#D9D2C5</span>
+                </div>
+                <ul class="moodboard-list">
+                    <li data-i18n="system_item_1">Tipografia principal: Inter variable para escalas de peso en HUD.</li>
+                    <li data-i18n="system_item_2">Iconografia tecnica inspirada en interfaces tacticas de videojuego.</li>
+                    <li data-i18n="system_item_3">Composiciones en grid modular para presentar procesos y entregables.</li>
+                    <li data-i18n="system_item_4">Textura grunge como acento narrativo, no como ruido permanente.</li>
+                </ul>
+            </article>
         </div>
     </section>
 
-    <!-- Portfolio Grid -->
+    <section class="inter-font featured-projects" id="proyectos">
+        <div class="featured-header">
+            <p class="hero-eyebrow" data-i18n="featured_eyebrow">Nuevos casos</p>
+            <h2 data-i18n="featured_title">Proyectos destacados</h2>
+        </div>
+        <div class="featured-grid">
+            <article class="featured-card">
+                <span class="featured-badge-mini" data-i18n="badge_new">Nuevo</span>
+                <img src="Imagenes/Unity_IMG/Slenderman1UN.png" alt="HUD para juego de horror en Unity">
+                <h3 data-i18n="featured_1_title">Sistema de interaccion de horror</h3>
+                <p data-i18n="featured_1_desc">UI diegetica para supervivencia con inventario rapido, feedback de tension y capas de audio reactivas.</p>
+            </article>
+            <article class="featured-card">
+                <span class="featured-badge-mini" data-i18n="badge_new">Nuevo</span>
+                <img src="Imagenes/Motion_IMG/ScreenShotReelMG.png" alt="Flujo de trabajo de motion graphics">
+                <h3 data-i18n="featured_2_title">Kit de Motion Vol.02</h3>
+                <p data-i18n="featured_2_desc">Paquete de transiciones y loops para trailers cortos, redes sociales y prototipos de interfaz animada.</p>
+            </article>
+            <article class="featured-card">
+                <span class="featured-badge-mini" data-i18n="badge_new">Nuevo</span>
+                <img src="Imagenes/Unity_IMG/LevelD1.png" alt="Exploracion visual en entorno 3D">
+                <h3 data-i18n="featured_3_title">Exploracion visual 3D</h3>
+                <p data-i18n="featured_3_desc">Pruebas de atmosfera, composicion de escena y focalizacion de recorridos en entorno natural con arquitectura rustica.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="inter-font case-studies-section">
+        <div class="featured-header">
+            <p class="hero-eyebrow" data-i18n="cases_eyebrow">Casos de estudio</p>
+            <h2 data-i18n="cases_title">Proyectos documentados</h2>
+            <p class="case-intro" data-i18n="cases_intro">Cada proyecto incluye objetivo, rol, herramientas y resultado para comunicar proceso de diseno y no solo imagen final.</p>
+        </div>
+
+        <div class="case-grid">
+            <article class="case-card">
+                <div class="case-image-wrap">
+                    <img src="Imagenes/Unity_IMG/Slenderman1UN.png" alt="Caso de sistema de horror en Unity">
+                    <span class="case-status" data-i18n="status_dev">En desarrollo</span>
+                </div>
+                <div class="case-body">
+                    <h3 data-i18n="case_1_title">Sistema de interaccion de horror</h3>
+                    <p data-i18n="case_1_goal">Objetivo: aumentar tension y claridad de acciones en una experiencia de supervivencia.</p>
+                    <p data-i18n="case_1_role">Rol: disenador UI/UX + integracion de mecanicas.</p>
+                    <p data-i18n="case_1_tools">Herramientas: Unity, C#, prototipado HUD, audio reactivo.</p>
+                    <p data-i18n="case_1_result">Resultado: inventario mas rapido, lectura de riesgo inmediata y mejor ritmo nocturno.</p>
+                </div>
+            </article>
+
+            <article class="case-card">
+                <div class="case-image-wrap">
+                    <img src="Imagenes/Motion_IMG/LenonesMarinosMG.png" alt="Caso de campana audiovisual Galapagos">
+                    <span class="case-status" data-i18n="status_client">Cliente real</span>
+                </div>
+                <div class="case-body">
+                    <h3 data-i18n="case_2_title">Campana Leones Marinos Galapagos</h3>
+                    <p data-i18n="case_2_goal">Objetivo: producir clips cortos con consistencia de marca para difusion digital.</p>
+                    <p data-i18n="case_2_role">Rol: artista de motion graphics + desarrollo de assets.</p>
+                    <p data-i18n="case_2_tools">Herramientas: After Effects, Illustrator, Premiere Pro.</p>
+                    <p data-i18n="case_2_result">Resultado: 3 piezas seleccionadas por nivel tecnico y cohesion visual.</p>
+                </div>
+            </article>
+
+            <article class="case-card">
+                <div class="case-image-wrap">
+                    <img src="Imagenes/Unity_IMG/GameMecanics1.png" alt="Caso de mecanicas y feedback en Unity">
+                    <span class="case-status" data-i18n="status_playable">Prototipo jugable</span>
+                </div>
+                <div class="case-body">
+                    <h3 data-i18n="case_3_title">Prototipo de mecanicas y feedback</h3>
+                    <p data-i18n="case_3_goal">Objetivo: validar interacciones fisicas y legibilidad de estados para decisiones rapidas.</p>
+                    <p data-i18n="case_3_role">Rol: diseno de mecanicas + balance de interaccion.</p>
+                    <p data-i18n="case_3_tools">Herramientas: Unity, fisicas 3D, pruebas iterativas.</p>
+                    <p data-i18n="case_3_result">Resultado: colisiones mas claras y mejor consistencia entre accion y feedback visual.</p>
+                </div>
+            </article>
+
+            <article class="case-card">
+                <div class="case-image-wrap">
+                    <img src="Imagenes/Unity_IMG/LuzYRenderUN.png" alt="Caso de iluminacion y render en Unity">
+                    <span class="case-status" data-i18n="status_tech">Iteracion tecnica</span>
+                </div>
+                <div class="case-body">
+                    <h3 data-i18n="case_4_title">Flujo de iluminacion y render</h3>
+                    <p data-i18n="case_4_goal">Objetivo: lograr escenas atmosfericas sin comprometer rendimiento en URP.</p>
+                    <p data-i18n="case_4_role">Rol: artista tecnico junior.</p>
+                    <p data-i18n="case_4_tools">Herramientas: mixed/baked lighting, post-processing y optimizacion de assets.</p>
+                    <p data-i18n="case_4_result">Resultado: sombras consistentes, mayor profundidad visual y estabilidad en pruebas.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="inter-font">
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Todos</button>
+            <button class="filter-btn" data-filter="ux" data-i18n="filter_ux">Sistemas UX</button>
+            <button class="filter-btn" data-filter="unity" data-i18n="filter_unity">Unity</button>
+            <button class="filter-btn" data-filter="motion" data-i18n="filter_motion">Motion Graphics</button>
+            <button class="filter-btn" data-filter="game" data-i18n="filter_game">Diseno de juego</button>
+            <button class="filter-btn" data-filter="brand" data-i18n="filter_brand">Marca</button>
+        </div>
+    </section>
+
     <section class="inter-font">
         <div class="portfolio-grid">
-            
-            <!-- PROYECTO UNITY 1 -->
-            <div class="portfolio-item" data-category="unity game">
+            <div class="portfolio-item" data-category="unity game ux">
                 <div class="portfolio-image">
-                   <img src="Imagenes/Unity_IMG/LuzYRenderUN.png" alt="Rendered Unity Scene">
+                    <img src="Imagenes/Unity_IMG/LuzYRenderUN.png" alt="Escena renderizada en Unity">
                     <div class="portfolio-overlay">
-                        <h3>Light and Render Unity</h3>
-                        <p>Project focused on <strong>baked and mixed lighting</strong> techniques to optimize performance across all game types, especially <strong>3D games with URP</strong>. Also involved using and modifying <strong>assets</strong> to enhance in-game performance and visual quality.</p>
+                        <h3 data-i18n="grid_1_title">Iluminacion y render en Unity</h3>
+                        <p data-i18n="grid_1_desc">Proyecto de iluminacion baked y mixed para optimizar rendimiento 3D sin perder atmosfera ni legibilidad.</p>
                         <div class="portfolio-tags">
                             <span class="tag">Unity</span>
-                            <span class="tag">Level Design</span>
+                            <span class="tag" data-i18n="tag_level">Diseno de niveles</span>
+                            <span class="tag" data-i18n="tag_readability">Legibilidad UX</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- FIN PROYECTO UNITY 1 -->
 
-            <!-- PROYECTO UNITY 2 -->
             <div class="portfolio-item" data-category="unity game">
                 <div class="portfolio-image">
-                    <img src="Imagenes/Unity_IMG/LevelD1.png" alt="Unity Level Design">
+                    <img src="Imagenes/Unity_IMG/LevelD1.png" alt="Diseno de nivel en Unity">
                     <div class="portfolio-overlay">
-                        <h3>3D Level Design</h3>
-                        <p>Created an <strong>artificial environment</strong> featuring an old house filled with various furniture assets. This project aimed to develop <strong>level design skills</strong> essential for working in the gaming industry, focusing on <strong>spatial composition</strong> and asset integration.</p>
+                        <h3 data-i18n="grid_2_title">Diseno de nivel 3D</h3>
+                        <p data-i18n="grid_2_desc">Entorno artificial centrado en composicion espacial, puntos de interes y consistencia visual para exploracion.</p>
                         <div class="portfolio-tags">
                             <span class="tag">Unity</span>
-                            <span class="tag">Level Design</span>
+                            <span class="tag" data-i18n="tag_level">Diseno de niveles</span>
                             <span class="tag">3D</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- FIN PROYECTO UNITY 2 -->
 
-            <!-- PROYECTO UNITY 3 -->
-            <div class="portfolio-item" data-category="unity game">
+            <div class="portfolio-item" data-category="unity game ux">
                 <div class="portfolio-image">
-                    <img src="Imagenes/Unity_IMG/GameMecanics1.png" alt="Game Mechanics">
+                    <img src="Imagenes/Unity_IMG/GameMecanics1.png" alt="Mecanicas y pruebas en Unity">
                     <div class="portfolio-overlay">
-                        <h3>Game Mechanics</h3>
-                        <p>Simulated <strong>material physics</strong> and <strong>3D object collisions</strong> in an artificial environment. This <strong>play-and-watch</strong> style project required strong data skills to perform accurate calculations, observing how objects react based on their <strong>mass and collision properties</strong>.</p>
+                        <h3 data-i18n="grid_3_title">Sistema de mecanicas</h3>
+                        <p data-i18n="grid_3_desc">Simulacion de fisicas, colisiones y reacciones para validar interacciones en tiempo real.</p>
                         <div class="portfolio-tags">
                             <span class="tag">Unity</span>
-                            <span class="tag">Game Design</span>
-                            <span class="tag">Mechanics</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- FIN PROYECTO UNITY 3 -->
-             <div class="portfolio-item" data-category="unity game">
-                <div class="portfolio-image">
-                    <img src="Imagenes/Unity_IMG/Slenderman1UN.png" alt="Game Mechanics">
-                    <div class="portfolio-overlay">
-                        <h3>Horror Game</h3>
-                        <p><strong>Survival Horror Slenderman Game</strong> implementing <strong>suspense and ambience mechanics</strong>. This ongoing project consolidates everything learned in game design so far. One of the most interesting implementations was a <strong>footstep audio script</strong> that adapts to different terrain types.</p>
-                        <div class="portfolio-tags">
-                            <span class="tag">Unity</span>
-                            <span class="tag">Game Design</span>
-                            <span class="tag">Mechanics</span>
+                            <span class="tag" data-i18n="tag_game">Diseno de juego</span>
+                            <span class="tag" data-i18n="tag_mechanics">Mecanicas</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-          
-
-            <!-- ========================================
-                 PROYECTOS DE MOTION GRAPHICS
-                 Para añadir más: Copia un bloque completo
-                 y cambia data-category="motion"
-                 ======================================== -->
-
-            <!-- PROYECTO MOTION 1 -->
-            <div class="portfolio-item" data-category="motion">
+            <div class="portfolio-item" data-category="unity game ux brand">
                 <div class="portfolio-image">
-                    <img src="Imagenes/Motion_IMG/ScreenShotReelMG.png" alt="Motion Graphics Project">
+                    <img src="Imagenes/Unity_IMG/Slenderman1UN.png" alt="Prototipo HUD de tension para horror">
                     <div class="portfolio-overlay">
-                        <h3>Motion Graphics Reel</h3>
-                        <p><strong>Eco-friendly themed</strong> reel showcasing various digital animation techniques including <strong>liquid and gravity simulation</strong>. Created assets in Illustrator and developed <strong>visual narratives</strong> to convey environmental messages, with complete <strong>post-production</strong> in After Effects.</p>
+                        <h3 data-i18n="grid_4_title">Prototipo HUD de suspenso</h3>
+                        <p data-i18n="grid_4_desc">HUD con visibilidad en baja luz, jerarquia de riesgo y feedback inmediato para escenas de alto estres.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag" data-i18n="tag_ui_unity">UI en Unity</span>
+                            <span class="tag" data-i18n="tag_ux_research">Investigacion UX</span>
+                            <span class="tag" data-i18n="tag_horror">Diseno de horror</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" data-category="motion ux brand">
+                <div class="portfolio-image">
+                    <img src="Imagenes/Motion_IMG/ScreenShotReelMG.png" alt="Reel de motion graphics">
+                    <div class="portfolio-overlay">
+                        <h3 data-i18n="grid_5_title">Reel de motion graphics</h3>
+                        <p data-i18n="grid_5_desc">Reel con simulaciones de liquido/gravedad, assets vectoriales y postproduccion en After Effects.</p>
                         <div class="portfolio-tags">
                             <span class="tag">After Effects</span>
-                            <span class="tag">Animation</span>
-                            <span class="tag">Design</span>
+                            <span class="tag" data-i18n="tag_animation">Animacion</span>
+                            <span class="tag" data-i18n="tag_design">Diseno</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- FIN PROYECTO MOTION 1 -->
 
-            <!-- PROYECTO MOTION 2 - Placeholder -->
-            
             <a href="https://www.youtube.com/@IsmaelZUSFQMI" target="_blank" rel="noopener noreferrer" class="portfolio-card-link">
-                <div class="portfolio-item" data-category="motion">
+                <div class="portfolio-item" data-category="motion brand">
                     <div class="portfolio-image">
-                        <img src="Imagenes/Motion_IMG/LenonesMarinosMG.png" alt="Leones Marinos Galapagos">
+                        <img src="Imagenes/Motion_IMG/LenonesMarinosMG.png" alt="Leones marinos Galapagos">
                         <div class="portfolio-overlay">
-                            <h3>Leones Marinos Galapagos</h3>
-                            <p><strong>Mid-semester real client project</strong>. Three YouTube clips were selected for the <strong>Galapagos Sea Lions campaign</strong> thanks to their <strong>high technical level</strong> and asset development following strict <strong>brand and color guidelines</strong>.</p>
+                            <h3 data-i18n="grid_6_title">Leones marinos Galapagos</h3>
+                            <p data-i18n="grid_6_desc">Proyecto con cliente real y lineamientos de marca estrictos para contenido audiovisual en redes.</p>
                             <div class="portfolio-tags">
                                 <span class="tag">After Effects</span>
-                                <span class="tag">Animation</span>
-                                <span class="tag">Design</span>
+                                <span class="tag" data-i18n="tag_animation">Animacion</span>
+                                <span class="tag" data-i18n="tag_brand_system">Sistema de marca</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </a>
-            
-
-            <!-- ========================================
-                 PROYECTOS WEB
-                 Para añadir más: data-category="web"
-                 ======================================== -->
-
-            <!-- PROYECTO WEB 1 - Placeholder -->
-            <div class="portfolio-item" data-category="web">
-                <div class="portfolio-image">
-                    <img src="Imagenes/Web_IMG/Portafolio Web1 IZ.png" alt="Moodboard Web Design">
-                    <div class="placeholder-project">
-                        <div class="placeholder-icon">🌐</div>
-                        <h3>Web Platform</h3>
-                    </div>
-                    <div class="portfolio-overlay">
-                        <h3>Responsive Website</h3>
-                        <p>This very website showcases <strong>full accessibility and control</strong> across desktop and mobile. All interactions remain consistent while the <strong>experience adapts</strong> to the user's screen size. Also features the <strong>design and branding concept</strong> of AshenThread studio presented throughout this portfolio.</p>
-                        <div class="portfolio-tags">
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Responsive</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- FIN PROYECTO WEB 1 -->
-
-            <!-- ========================================
-                 INSTRUCCIONES DE CATEGORÍAS>
-            Categorías disponibles:
-            - "unity" = Solo Unity
-            - "motion" = Solo Motion Graphics
-            - "web" = Solo Web
-            - "game" = Solo Game Design
-            - "unity game" = Aparece en Unity Y Game Design
-            - "web unity" = Aparece en Web Y Unity
-            (Puedes combinar categorías separadas por espacios)
-                 ======================================== -->
-
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="inter-font cta-section">
-        <h2>Interested in Working Together?</h2>
-        <p>Let's create something amazing. Get in touch to discuss your project.</p>
-        <a href="contacto.html" class="cta-button">Contact Me</a>
+    <section id="guia" class="inter-font guide-section">
+        <h2 data-i18n="guide_title">Guia para agregar proyectos nuevos</h2>
+        <p data-i18n="guide_intro">Usa esta estructura para escalar el portafolio con proyectos recientes de forma ordenada y consistente.</p>
+
+        <div class="guide-grid">
+            <article class="guide-card">
+                <h3 data-i18n="guide_step1_title">1. Prepara tus archivos</h3>
+                <ul>
+                    <li data-i18n="guide_step1_1">Imagen principal: 1600x900 (o 1920x1080), formato JPG/PNG.</li>
+                    <li data-i18n="guide_step1_2">Video opcional: link de YouTube/Vimeo.</li>
+                    <li data-i18n="guide_step1_3">Nombra por proyecto: proyecto-nombre-01.png.</li>
+                </ul>
+            </article>
+
+            <article class="guide-card">
+                <h3 data-i18n="guide_step2_title">2. Completa la ficha del proyecto</h3>
+                <ul>
+                    <li data-i18n="guide_step2_1">Nombre del proyecto.</li>
+                    <li data-i18n="guide_step2_2">Tipo: Unity, Motion Graphics, UI/UX, Web, Game Design, Branding.</li>
+                    <li data-i18n="guide_step2_3">Rol: que hiciste tu directamente.</li>
+                    <li data-i18n="guide_step2_4">Herramientas: Unity, C#, After Effects, Illustrator, Premiere, HTML/CSS/JS.</li>
+                    <li data-i18n="guide_step2_5">No usar Blender en la descripcion de herramientas.</li>
+                </ul>
+            </article>
+
+            <article class="guide-card">
+                <h3 data-i18n="guide_step3_title">3. Escribe una descripcion util</h3>
+                <ul>
+                    <li data-i18n="guide_step3_1">Objetivo: que problema resolviste.</li>
+                    <li data-i18n="guide_step3_2">Proceso: 1-2 decisiones de diseno importantes.</li>
+                    <li data-i18n="guide_step3_3">Resultado: que mejoro o que se logro.</li>
+                </ul>
+            </article>
+
+            <article class="guide-card">
+                <h3 data-i18n="guide_step4_title">4. Copia este template HTML</h3>
+                <pre class="guide-code"><code>&lt;div class="portfolio-item" data-category="unity ux"&gt;
+  &lt;div class="portfolio-image"&gt;
+    &lt;img src="Imagenes/Unity_IMG/tu-proyecto.png" alt="Nombre del proyecto"&gt;
+    &lt;div class="portfolio-overlay"&gt;
+      &lt;h3&gt;Nombre del proyecto&lt;/h3&gt;
+      &lt;p&gt;Descripcion corta del objetivo y resultado.&lt;/p&gt;
+      &lt;div class="portfolio-tags"&gt;
+        &lt;span class="tag"&gt;Unity&lt;/span&gt;
+        &lt;span class="tag"&gt;UI en Unity&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </article>
+        </div>
+        <!-- Admin: Formulario interno para generar tarjetas (local only) -->
+        <div class="guide-admin">
+            <button id="toggle-admin" class="guide-admin-toggle">Mostrar formulario (local)</button>
+            <div id="project-editor" class="project-editor" hidden>
+                <p class="admin-note">Este formulario genera el HTML localmente y puede insertar la tarjeta en la vista o copiar el fragmento para revisión. No publica nada automáticamente en GitHub.</p>
+                <form id="project-form">
+                    <label>Nombre del proyecto<br><input type="text" id="pf-name" required placeholder="Nombre del proyecto"></label>
+                    <label>Ruta imagen<br><input type="text" id="pf-image" required placeholder="Imagenes/Unity_IMG/mi-proyecto.png"></label>
+                    <label>Categorias (separadas por espacio)<br><input type="text" id="pf-cats" placeholder="unity ux"></label>
+                    <label>Descripcion corta<br><textarea id="pf-desc" rows="3" placeholder="Objetivo y resultado en una frase"></textarea></label>
+                    <label>Rol<br><input type="text" id="pf-role" placeholder="Rol en el proyecto"></label>
+                    <label>Herramientas (separadas por coma)<br><input type="text" id="pf-tools" placeholder="Unity, C#, After Effects"></label>
+                    <div class="admin-actions">
+                        <button type="button" id="pf-preview">Previsualizar</button>
+                        <button type="button" id="pf-generate">Generar HTML</button>
+                        <button type="button" id="pf-insert">Insertar en página</button>
+                        <button type="button" id="pf-save">Guardar localmente</button>
+                        <button type="button" id="pf-clear">Limpiar</button>
+                    </div>
+                </form>
+
+                <div id="project-preview" class="project-preview" aria-live="polite"></div>
+                <label>HTML generado (copiar para revisión)<br>
+                <textarea id="generated-html" class="generated-html" readonly rows="6"></textarea></label>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="inter-font contact-section">
+        <h2 data-i18n="contact_title">Contacto</h2>
+        <p data-i18n="contact_desc">Listo para colaborar en proyectos de UI/UX, juego y motion graphics.</p>
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/ismael-zambrano-653b6524b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.youtube.com/@IsmaelZUSFQMI" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a href="mailto:ismaelz@ashenthread.com">Email</a>
+        </div>
     </section>
 
     <button class="back-to-top" aria-label="Back to top">↑</button>
     <footer>
         <p>&copy; 2026 AshenThread.
-            <img src="1x/Artboard 2.png" class="footer-logo" alt="AshenThreads isotype">
+            <img src="1x/Artboard 2.png" class="footer-logo" alt="Isotipo AshenThread">
         </p>
     </footer>
 
     <script>
-        // Portfolio filter functionality
         const filterBtns = document.querySelectorAll('.filter-btn');
-        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        let portfolioItems = document.querySelectorAll('.portfolio-item');
+        const langBtns = document.querySelectorAll('.lang-btn');
+
+        const i18n = {
+            es: {
+                nav_home: 'Inicio', nav_about: 'Sobre mi', nav_projects: 'Proyectos', nav_guide: 'Guia', nav_contact: 'Contacto',
+                hero_title: 'Portafolio', hero_desc: 'Diseno experiencias de juego con enfoque en tension, legibilidad y narrativa visual. Esta version integra direccion de marca y proyectos recientes de Unity, UI y motion graphics.',
+                hero_metric_projects: 'Proyectos', hero_metric_disciplines: 'Disciplinas', hero_metric_vision: 'Vision',
+                about_title: 'Sobre mi', about_role: 'Estudiante de Media Interactiva | Disenador UI/UX | Disenador de Videojuegos | Artista de Motion Graphics',
+                about_who_title: 'Quien soy', about_who_desc: 'Soy un creativo enfocado en productos digitales inmersivos. Mi base en psicologia me ayuda a disenar con enfoque humano, mientras construyo identidad visual fuerte y narrativa clara.',
+                about_education_title: 'Formacion',
+                about_education_1: 'USFQ - Media Interactiva (3er semestre). Enfoque en UI/UX, motion graphics, game design y desarrollo web.',
+                about_education_2: 'UISEK - Psicologia General (2 anos). Base en conducta, cognicion y factores humanos.',
+                about_education_3: 'Certificado UX de Google - Coursera. Investigacion de usuarios, wireframing, prototipado y testing.',
+                about_skills_title: 'Habilidades y herramientas', skill_uiux: 'Diseno UI/UX', skill_gamedesign: 'Diseno de videojuegos', skill_leveldesign: 'Diseno de niveles',
+                moodboard_eyebrow: 'Direccion visual', moodboard_title: 'Moodboard AshenThread', moodboard_desc: 'La identidad visual se construye desde proyectos reales: entornos de Unity con atmosfera oscura, HUD de tension y piezas motion orientadas a narrativa.',
+                system_title: 'Sistema visual 2026', system_desc: 'Base oscura con contraste alto para reforzar atmosfera y jerarquia de informacion en HUD, menus y paneles de inventario.',
+                system_item_1: 'Tipografia principal: Inter variable para escalas de peso en HUD.',
+                system_item_2: 'Iconografia tecnica inspirada en interfaces tacticas de videojuego.',
+                system_item_3: 'Composiciones en grid modular para presentar procesos y entregables.',
+                system_item_4: 'Textura grunge como acento narrativo, no como ruido permanente.',
+                featured_eyebrow: 'Nuevos casos', featured_title: 'Proyectos destacados', badge_new: 'Nuevo',
+                featured_1_title: 'Sistema de interaccion de horror', featured_1_desc: 'UI diegetica para supervivencia con inventario rapido, feedback de tension y capas de audio reactivas.',
+                featured_2_title: 'Kit de Motion Vol.02', featured_2_desc: 'Paquete de transiciones y loops para trailers cortos, redes sociales y prototipos de interfaz animada.',
+                featured_3_title: 'Exploracion visual 3D', featured_3_desc: 'Pruebas de atmosfera, composicion de escena y focalizacion de recorridos en entorno natural con arquitectura rustica.',
+                cases_eyebrow: 'Casos de estudio', cases_title: 'Proyectos documentados', cases_intro: 'Cada proyecto incluye objetivo, rol, herramientas y resultado para comunicar proceso de diseno y no solo imagen final.',
+                status_dev: 'En desarrollo', status_client: 'Cliente real', status_playable: 'Prototipo jugable', status_tech: 'Iteracion tecnica',
+                case_1_title: 'Sistema de interaccion de horror', case_1_goal: 'Objetivo: aumentar tension y claridad de acciones en una experiencia de supervivencia.', case_1_role: 'Rol: disenador UI/UX + integracion de mecanicas.', case_1_tools: 'Herramientas: Unity, C#, prototipado HUD, audio reactivo.', case_1_result: 'Resultado: inventario mas rapido, lectura de riesgo inmediata y mejor ritmo nocturno.',
+                case_2_title: 'Campana Leones Marinos Galapagos', case_2_goal: 'Objetivo: producir clips cortos con consistencia de marca para difusion digital.', case_2_role: 'Rol: artista de motion graphics + desarrollo de assets.', case_2_tools: 'Herramientas: After Effects, Illustrator, Premiere Pro.', case_2_result: 'Resultado: 3 piezas seleccionadas por nivel tecnico y cohesion visual.',
+                case_3_title: 'Prototipo de mecanicas y feedback', case_3_goal: 'Objetivo: validar interacciones fisicas y legibilidad de estados para decisiones rapidas.', case_3_role: 'Rol: diseno de mecanicas + balance de interaccion.', case_3_tools: 'Herramientas: Unity, fisicas 3D, pruebas iterativas.', case_3_result: 'Resultado: colisiones mas claras y mejor consistencia entre accion y feedback visual.',
+                case_4_title: 'Flujo de iluminacion y render', case_4_goal: 'Objetivo: lograr escenas atmosfericas sin comprometer rendimiento en URP.', case_4_role: 'Rol: artista tecnico junior.', case_4_tools: 'Herramientas: mixed/baked lighting, post-processing y optimizacion de assets.', case_4_result: 'Resultado: sombras consistentes, mayor profundidad visual y estabilidad en pruebas.',
+                filter_all: 'Todos', filter_ux: 'Sistemas UX', filter_unity: 'Unity', filter_motion: 'Motion Graphics', filter_game: 'Diseno de juego', filter_brand: 'Marca',
+                grid_1_title: 'Iluminacion y render en Unity', grid_1_desc: 'Proyecto de iluminacion baked y mixed para optimizar rendimiento 3D sin perder atmosfera ni legibilidad.',
+                grid_2_title: 'Diseno de nivel 3D', grid_2_desc: 'Entorno artificial centrado en composicion espacial, puntos de interes y consistencia visual para exploracion.',
+                grid_3_title: 'Sistema de mecanicas', grid_3_desc: 'Simulacion de fisicas, colisiones y reacciones para validar interacciones en tiempo real.',
+                grid_4_title: 'Prototipo HUD de suspenso', grid_4_desc: 'HUD con visibilidad en baja luz, jerarquia de riesgo y feedback inmediato para escenas de alto estres.',
+                grid_5_title: 'Reel de motion graphics', grid_5_desc: 'Reel con simulaciones de liquido/gravedad, assets vectoriales y postproduccion en After Effects.',
+                grid_6_title: 'Leones marinos Galapagos', grid_6_desc: 'Proyecto con cliente real y lineamientos de marca estrictos para contenido audiovisual en redes.',
+                tag_level: 'Diseno de niveles', tag_readability: 'Legibilidad UX', tag_game: 'Diseno de juego', tag_mechanics: 'Mecanicas', tag_ui_unity: 'UI en Unity', tag_ux_research: 'Investigacion UX', tag_horror: 'Diseno de horror', tag_animation: 'Animacion', tag_design: 'Diseno', tag_brand_system: 'Sistema de marca',
+                guide_title: 'Guia para agregar proyectos nuevos', guide_intro: 'Usa esta estructura para escalar el portafolio con proyectos recientes de forma ordenada y consistente.',
+                guide_step1_title: '1. Prepara tus archivos', guide_step1_1: 'Imagen principal: 1600x900 (o 1920x1080), formato JPG/PNG.', guide_step1_2: 'Video opcional: link de YouTube/Vimeo.', guide_step1_3: 'Nombra por proyecto: proyecto-nombre-01.png.',
+                guide_step2_title: '2. Completa la ficha del proyecto', guide_step2_1: 'Nombre del proyecto.', guide_step2_2: 'Tipo: Unity, Motion Graphics, UI/UX, Web, Game Design, Branding.', guide_step2_3: 'Rol: que hiciste tu directamente.', guide_step2_4: 'Herramientas: Unity, C#, After Effects, Illustrator, Premiere, HTML/CSS/JS.', guide_step2_5: 'No usar Blender en la descripcion de herramientas.',
+                guide_step3_title: '3. Escribe una descripcion util', guide_step3_1: 'Objetivo: que problema resolviste.', guide_step3_2: 'Proceso: 1-2 decisiones de diseno importantes.', guide_step3_3: 'Resultado: que mejoro o que se logro.',
+                guide_step4_title: '4. Copia este template HTML',
+                contact_title: 'Contacto', contact_desc: 'Listo para colaborar en proyectos de UI/UX, juego y motion graphics.'
+            },
+            en: {
+                nav_home: 'Home', nav_about: 'About', nav_projects: 'Projects', nav_guide: 'Guide', nav_contact: 'Contact',
+                hero_title: 'Portfolio', hero_desc: 'I design game experiences focused on tension, readability, and visual narrative. This version integrates stronger brand direction and recent Unity, UI, and motion graphics projects.',
+                hero_metric_projects: 'Projects', hero_metric_disciplines: 'Disciplines', hero_metric_vision: 'Vision',
+                about_title: 'About me', about_role: 'Interactive Media Student | UI/UX Designer | Game Designer | Motion Graphics Artist',
+                about_who_title: 'Who I am', about_who_desc: 'I am a creative focused on immersive digital products. My psychology background helps me design with a human-centered approach while building strong visual identity and clear storytelling.',
+                about_education_title: 'Education',
+                about_education_1: 'USFQ - Interactive Media (3rd semester). Focus on UI/UX, motion graphics, game design, and web development.',
+                about_education_2: 'UISEK - General Psychology (2 years). Foundation in behavior, cognition, and human factors.',
+                about_education_3: 'Google UX Certificate - Coursera. User research, wireframing, prototyping, and testing.',
+                about_skills_title: 'Skills and tools', skill_uiux: 'UI/UX Design', skill_gamedesign: 'Game Design', skill_leveldesign: 'Level Design',
+                moodboard_eyebrow: 'Visual direction', moodboard_title: 'AshenThread moodboard', moodboard_desc: 'The visual identity is built from real projects: Unity environments with dark atmosphere, tension-focused HUD, and narrative-driven motion pieces.',
+                system_title: 'Visual system 2026', system_desc: 'Dark base with high contrast to reinforce atmosphere and information hierarchy in HUD, menus, and inventory panels.',
+                system_item_1: 'Primary typeface: Inter variable for dynamic HUD weight scaling.',
+                system_item_2: 'Technical iconography inspired by tactical game interfaces.',
+                system_item_3: 'Modular grid compositions to present process and deliverables.',
+                system_item_4: 'Grunge texture as a narrative accent, not constant noise.',
+                featured_eyebrow: 'New cases', featured_title: 'Featured projects', badge_new: 'New',
+                featured_1_title: 'Horror Interaction System', featured_1_desc: 'Diegetic survival UI with fast inventory, tension feedback, and reactive audio layers.',
+                featured_2_title: 'Motion Toolkit Vol.02', featured_2_desc: 'Transition and loop package for short trailers, social media, and animated UI prototypes.',
+                featured_3_title: '3D Visual Exploration', featured_3_desc: 'Atmosphere and scene composition tests to guide exploration in a natural environment.',
+                cases_eyebrow: 'Case studies', cases_title: 'Documented projects', cases_intro: 'Each project includes goal, role, tools, and outcome to communicate process, not just final visuals.',
+                status_dev: 'In progress', status_client: 'Real client', status_playable: 'Playable prototype', status_tech: 'Technical iteration',
+                case_1_title: 'Horror Interaction System', case_1_goal: 'Goal: improve action clarity and tension in a survival experience.', case_1_role: 'Role: UI/UX designer + mechanics integration.', case_1_tools: 'Tools: Unity, C#, HUD prototyping, reactive audio.', case_1_result: 'Outcome: faster inventory flow and clearer risk reading.',
+                case_2_title: 'Galapagos Sea Lions Campaign', case_2_goal: 'Goal: produce short clips with strong brand consistency.', case_2_role: 'Role: motion graphics artist + asset development.', case_2_tools: 'Tools: After Effects, Illustrator, Premiere Pro.', case_2_result: 'Outcome: 3 selected pieces for technical quality and visual cohesion.',
+                case_3_title: 'Mechanics and Feedback Prototype', case_3_goal: 'Goal: validate physical interactions and readable player states.', case_3_role: 'Role: mechanics design + interaction balancing.', case_3_tools: 'Tools: Unity, 3D physics, iterative testing.', case_3_result: 'Outcome: clearer collisions and stronger action-feedback consistency.',
+                case_4_title: 'Lighting and Render Pipeline', case_4_goal: 'Goal: achieve atmospheric scenes without hurting URP performance.', case_4_role: 'Role: junior technical artist.', case_4_tools: 'Tools: mixed/baked lighting, post-processing, asset optimization.', case_4_result: 'Outcome: more consistent shadows and better visual depth.',
+                filter_all: 'All', filter_ux: 'UX Systems', filter_unity: 'Unity', filter_motion: 'Motion Graphics', filter_game: 'Game Design', filter_brand: 'Branding',
+                grid_1_title: 'Unity Lighting and Render', grid_1_desc: 'Baked/mixed lighting project to optimize 3D performance while preserving atmosphere and readability.',
+                grid_2_title: '3D Level Design', grid_2_desc: 'Artificial environment focused on spatial composition and visual consistency for exploration.',
+                grid_3_title: 'Mechanics System', grid_3_desc: 'Physics, collisions, and reactions simulation to validate real-time interactions.',
+                grid_4_title: 'Suspense HUD Prototype', grid_4_desc: 'HUD with low-light visibility, risk hierarchy, and immediate feedback for high-stress scenes.',
+                grid_5_title: 'Motion Graphics Reel', grid_5_desc: 'Reel with liquid/gravity simulations, vector assets, and full post-production in After Effects.',
+                grid_6_title: 'Galapagos Sea Lions', grid_6_desc: 'Real-client project with strict branding guidelines for audiovisual social content.',
+                tag_level: 'Level Design', tag_readability: 'UX Readability', tag_game: 'Game Design', tag_mechanics: 'Mechanics', tag_ui_unity: 'Unity UI', tag_ux_research: 'UX Research', tag_horror: 'Horror Design', tag_animation: 'Animation', tag_design: 'Design', tag_brand_system: 'Brand System',
+                guide_title: 'Guide to add new projects', guide_intro: 'Use this structure to scale your portfolio with recent work in a consistent way.',
+                guide_step1_title: '1. Prepare your files', guide_step1_1: 'Main image: 1600x900 (or 1920x1080), JPG/PNG.', guide_step1_2: 'Optional video: YouTube/Vimeo link.', guide_step1_3: 'Name by project: project-name-01.png.',
+                guide_step2_title: '2. Complete project metadata', guide_step2_1: 'Project name.', guide_step2_2: 'Type: Unity, Motion Graphics, UI/UX, Web, Game Design, Branding.', guide_step2_3: 'Role: what you directly did.', guide_step2_4: 'Tools: Unity, C#, After Effects, Illustrator, Premiere, HTML/CSS/JS.', guide_step2_5: 'Do not use Blender in the tools description.',
+                guide_step3_title: '3. Write a useful description', guide_step3_1: 'Goal: what problem you solved.', guide_step3_2: 'Process: 1-2 important design decisions.', guide_step3_3: 'Outcome: what improved or what was achieved.',
+                guide_step4_title: '4. Copy this HTML template',
+                contact_title: 'Contact', contact_desc: 'Ready to collaborate on UI/UX, game, and motion graphics projects.'
+            }
+        };
+
+        function applyTranslations(lang) {
+            document.documentElement.lang = lang;
+            const dict = i18n[lang];
+            document.querySelectorAll('[data-i18n]').forEach((node) => {
+                const key = node.getAttribute('data-i18n');
+                if (dict[key]) {
+                    node.textContent = dict[key];
+                }
+            });
+            langBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
+            localStorage.setItem('ashenthread_lang', lang);
+        }
 
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                // Remove active class from all buttons
                 filterBtns.forEach(b => b.classList.remove('active'));
-                // Add active class to clicked button
                 btn.classList.add('active');
 
                 const filter = btn.getAttribute('data-filter');
@@ -297,6 +555,134 @@
                 });
             });
         });
+
+        langBtns.forEach(btn => {
+            btn.addEventListener('click', () => applyTranslations(btn.dataset.lang));
+        });
+
+        const savedLang = localStorage.getItem('ashenthread_lang') || 'es';
+        applyTranslations(savedLang);
+
+        // -------------------- Project Form / Admin (local only) --------------------
+        const toggleAdminBtn = document.getElementById('toggle-admin');
+        const projectEditor = document.getElementById('project-editor');
+        const projectForm = document.getElementById('project-form');
+        const previewBtn = document.getElementById('pf-preview');
+        const generateBtn = document.getElementById('pf-generate');
+        const insertBtn = document.getElementById('pf-insert');
+        const saveBtn = document.getElementById('pf-save');
+        const clearBtn = document.getElementById('pf-clear');
+        const previewArea = document.getElementById('project-preview');
+        const generatedHtml = document.getElementById('generated-html');
+        const portfolioGrid = document.querySelector('.portfolio-grid');
+
+        function showAdmin(toggle) {
+            if (!projectEditor) return;
+            projectEditor.hidden = !toggle;
+            toggleAdminBtn.textContent = projectEditor.hidden ? 'Mostrar formulario (local)' : 'Ocultar formulario';
+        }
+
+        if (toggleAdminBtn) toggleAdminBtn.addEventListener('click', () => showAdmin(projectEditor.hidden));
+
+        function buildProjectData() {
+            return {
+                name: document.getElementById('pf-name').value.trim(),
+                image: document.getElementById('pf-image').value.trim(),
+                cats: document.getElementById('pf-cats').value.trim(),
+                desc: document.getElementById('pf-desc').value.trim(),
+                role: document.getElementById('pf-role').value.trim(),
+                tools: document.getElementById('pf-tools').value.trim()
+            };
+        }
+
+        function escapeHtml(str){
+            return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        }
+
+        function buildHTML(data){
+            const catsAttr = escapeHtml((data.cats || '').toLowerCase());
+            const tags = (data.tools || '').split(',').map(t => t.trim()).filter(Boolean).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join(' ');
+            const snippet = `\n<div class="portfolio-item" data-category="${catsAttr}">\n  <div class="portfolio-image">\n    <img src="${escapeHtml(data.image)}" alt="${escapeHtml(data.name)}">\n    <div class="portfolio-overlay">\n      <h3>${escapeHtml(data.name)}</h3>\n      <p>${escapeHtml(data.desc)}</p>\n      <div class="portfolio-tags">\n        ${tags}\n      </div>\n    </div>\n  </div>\n</div>\n`;
+            return snippet;
+        }
+
+        function validateData(d){
+            if(!d.name) return 'El nombre es obligatorio.';
+            if(!d.image) return 'La ruta de la imagen es obligatoria.';
+            return null;
+        }
+
+        function showPreview(snippet){
+            if(!previewArea) return;
+            previewArea.innerHTML = snippet;
+        }
+
+        function copyToClipboard(text){
+            if(navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(text);
+            return Promise.reject(new Error('Clipboard API no disponible'));
+        }
+
+        previewBtn && previewBtn.addEventListener('click', () => {
+            const data = buildProjectData();
+            const err = validateData(data);
+            if(err){ alert(err); return; }
+            const html = buildHTML(data);
+            showPreview(html);
+            generatedHtml.value = html;
+        });
+
+        generateBtn && generateBtn.addEventListener('click', () => {
+            const data = buildProjectData();
+            const err = validateData(data);
+            if(err){ alert(err); return; }
+            const html = buildHTML(data);
+            generatedHtml.value = html;
+            copyToClipboard(html).then(()=>{
+                alert('HTML copiado al portapapeles. Pega y revisa antes de publicar.');
+            }).catch(()=>{
+                alert('No se pudo copiar automáticamente. Selecciona y copia el texto manualmente.');
+            });
+        });
+
+        insertBtn && insertBtn.addEventListener('click', () => {
+            const data = buildProjectData();
+            const err = validateData(data);
+            if(err){ alert(err); return; }
+            const html = buildHTML(data);
+            portfolioGrid.insertAdjacentHTML('beforeend', html);
+            // refresh portfolioItems used by filters
+            portfolioItems = document.querySelectorAll('.portfolio-item');
+            alert('Tarjeta insertada localmente. Recarga la página para restablecer pruebas si es necesario.');
+        });
+
+        saveBtn && saveBtn.addEventListener('click', () => {
+            const data = buildProjectData();
+            const err = validateData(data);
+            if(err){ alert(err); return; }
+            const saved = JSON.parse(localStorage.getItem('ashenthread_projects') || '[]');
+            saved.push(data);
+            localStorage.setItem('ashenthread_projects', JSON.stringify(saved));
+            alert('Proyecto guardado en localStorage (solo en este navegador).');
+        });
+
+        clearBtn && clearBtn.addEventListener('click', () => {
+            projectForm.reset();
+            previewArea.innerHTML = '';
+            generatedHtml.value = '';
+        });
+
+        function loadSavedProjects(){
+            const saved = JSON.parse(localStorage.getItem('ashenthread_projects') || '[]');
+            if(!saved.length) return;
+            saved.forEach(d => {
+                const html = buildHTML(d);
+                portfolioGrid.insertAdjacentHTML('beforeend', html);
+            });
+            portfolioItems = document.querySelectorAll('.portfolio-item');
+        }
+
+        // Cargar proyectos guardados al iniciar (si existen)
+        loadSavedProjects();
     </script>
 </body>
 </html>
