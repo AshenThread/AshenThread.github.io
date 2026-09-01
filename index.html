@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="1x/AsTh Blanco.png" type="image/x-icon">
     <link rel="stylesheet" href="Styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script src="wow.min.js"></script>
+    <script src="wow.min.js"></script> 
     <script>
         new WOW().init();
     </script>
@@ -71,7 +71,7 @@
 
             <div class="about-text">
                 <h3 data-i18n="about_who_title">Quien soy</h3>
-                <p data-i18n="about_who_desc">Soy un creativo enfocado en productos digitales inmersivos. Mi base en psicologia me ayuda a disenar con enfoque humano, mientras construyo identidad visual fuerte y narrativa clara.</p>
+                <p data-i18n="about_who_desc">Soy un creativo enfocado en productos digitales inmersivos. Mi base en psicologia me ayuda a diseñar con enfoque humano, mientras construyo experiencias con impacto social, narrativa clara y soluciones funcionales en UX/UI, web, videojuegos y motion graphics.</p>
 
                 <h3 data-i18n="about_education_title">Formacion</h3>
                 <p data-i18n="about_education_1"><strong>USFQ</strong> - Media Interactiva (3er semestre). Enfoque en UI/UX, motion graphics, game design y desarrollo web.</p>
@@ -165,7 +165,7 @@
         </div>
 
         <div class="case-grid">
-            <article class="case-card">
+            <article class="case-card project-card" data-project="horror-system">
                 <div class="case-image-wrap">
                     <img src="Imagenes/Unity_IMG/Slenderman1UN.png" alt="Caso de sistema de horror en Unity">
                     <span class="case-status" data-i18n="status_dev">En desarrollo</span>
@@ -179,7 +179,7 @@
                 </div>
             </article>
 
-            <article class="case-card">
+            <article class="case-card project-card" data-project="sea-lions-campaign">
                 <div class="case-image-wrap">
                     <img src="Imagenes/Motion_IMG/LenonesMarinosMG.png" alt="Caso de campana audiovisual Galapagos">
                     <span class="case-status" data-i18n="status_client">Cliente real</span>
@@ -193,7 +193,7 @@
                 </div>
             </article>
 
-            <article class="case-card">
+            <article class="case-card project-card" data-project="mechanics-feedback">
                 <div class="case-image-wrap">
                     <img src="Imagenes/Unity_IMG/GameMecanics1.png" alt="Caso de mecanicas y feedback en Unity">
                     <span class="case-status" data-i18n="status_playable">Prototipo jugable</span>
@@ -207,7 +207,7 @@
                 </div>
             </article>
 
-            <article class="case-card">
+            <article class="case-card project-card" data-project="lighting-render">
                 <div class="case-image-wrap">
                     <img src="Imagenes/Unity_IMG/LuzYRenderUN.png" alt="Caso de iluminacion y render en Unity">
                     <span class="case-status" data-i18n="status_tech">Iteracion tecnica</span>
@@ -236,7 +236,7 @@
 
     <section class="inter-font">
         <div class="portfolio-grid">
-            <div class="portfolio-item" data-category="unity game ux">
+            <div class="portfolio-item project-card" data-project="unity-lighting" data-category="unity game ux">
                 <div class="portfolio-image">
                     <img src="Imagenes/Unity_IMG/LuzYRenderUN.png" alt="Escena renderizada en Unity">
                     <div class="portfolio-overlay">
@@ -251,7 +251,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-item" data-category="unity game">
+            <div class="portfolio-item project-card" data-project="level-design" data-category="unity game">
                 <div class="portfolio-image">
                     <img src="Imagenes/Unity_IMG/LevelD1.png" alt="Diseno de nivel en Unity">
                     <div class="portfolio-overlay">
@@ -266,7 +266,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-item" data-category="unity game ux">
+            <div class="portfolio-item project-card" data-project="game-mechanics" data-category="unity game ux">
                 <div class="portfolio-image">
                     <img src="Imagenes/Unity_IMG/GameMecanics1.png" alt="Mecanicas y pruebas en Unity">
                     <div class="portfolio-overlay">
@@ -281,7 +281,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-item" data-category="unity game ux brand">
+            <div class="portfolio-item project-card" data-project="hud-suspense" data-category="unity game ux brand">
                 <div class="portfolio-image">
                     <img src="Imagenes/Unity_IMG/Slenderman1UN.png" alt="Prototipo HUD de tension para horror">
                     <div class="portfolio-overlay">
@@ -296,7 +296,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-item" data-category="motion ux brand">
+            <div class="portfolio-item project-card" data-project="motion-reel" data-category="motion ux brand">
                 <div class="portfolio-image">
                     <img src="Imagenes/Motion_IMG/ScreenShotReelMG.png" alt="Reel de motion graphics">
                     <div class="portfolio-overlay">
@@ -312,7 +312,7 @@
             </div>
 
             <a href="https://www.youtube.com/@IsmaelZUSFQMI" target="_blank" rel="noopener noreferrer" class="portfolio-card-link">
-                <div class="portfolio-item" data-category="motion brand">
+                <div class="portfolio-item project-card" data-project="sea-lions" data-category="motion brand">
                     <div class="portfolio-image">
                         <img src="Imagenes/Motion_IMG/LenonesMarinosMG.png" alt="Leones marinos Galapagos">
                         <div class="portfolio-overlay">
@@ -327,14 +327,145 @@
                     </div>
                 </div>
             </a>
+
+            <div class="portfolio-item project-card" data-project="conecta-ecuador" data-category="ux brand game">
+                <div class="portfolio-image">
+                    <img src="Imagenes/Conecta_Ecuador/conecta-ecuador-horizontal.png" alt="Conecta Ecuador - proyecto de emprendimiento y accesibilidad digital para adultos mayores">
+                    <div class="portfolio-overlay">
+                        <h3 data-i18n="grid_7_title">Conecta Ecuador</h3>
+                        <p data-i18n="grid_7_desc">Plataforma de emprendimiento que conecta a adultos mayores con agentes verificados para trámites, alfabetización digital y apoyo cotidiano con enfoque accesible y humano.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">UX</span>
+                            <span class="tag">React</span>
+                            <span class="tag" data-i18n="tag_emprendimiento">Emprendimiento</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item project-card" data-project="undercooked" data-category="unity game ux">
+                <div class="portfolio-image">
+                    <img src="https://img.youtube.com/vi/DoolV4bp-80/maxresdefault.jpg" alt="UnderCooked, juego móvil desarrollado en Unity con giroscopio como único input">
+                    <div class="portfolio-overlay">
+                        <h3 data-i18n="grid_8_title">UnderCooked</h3>
+                        <p data-i18n="grid_8_desc">Juego móvil desarrollado en 36 horas para el Interact2Hack, donde el giroscopio es el único input. Diseñé la arquitectura, la lógica y la experiencia de juego para una mecánica simple, rápida y divertida.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag" data-i18n="tag_gameplay">Gameplay</span>
+                            <span class="tag" data-i18n="tag_prototipo">Prototipo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="inter-font admin-panel">
+        <div class="admin-panel-header">
+            <h2>Admin local</h2>
+            <button id="toggle-admin" type="button" class="admin-toggle">Mostrar editor local</button>
+        </div>
+
+        <div id="project-editor" hidden>
+            <form id="project-form" class="admin-form">
+                <div class="admin-grid">
+                    <label>
+                        Proyecto
+                        <select id="admin-project-select">
+                            <option value="unity-lighting">Iluminación y render en Unity</option>
+                            <option value="level-design">Diseño de nivel 3D</option>
+                            <option value="game-mechanics">Sistema de mecánicas</option>
+                            <option value="hud-suspense">Prototipo HUD de suspenso</option>
+                            <option value="motion-reel">Reel de motion graphics</option>
+                            <option value="sea-lions">Leones marinos Galápagos</option>
+                            <option value="conecta-ecuador">Conecta Ecuador</option>
+                            <option value="undercooked">UnderCooked</option>
+                            <option value="horror-system">Sistema de interaccion de horror</option>
+                            <option value="sea-lions-campaign">Campana Leones Marinos</option>
+                            <option value="mechanics-feedback">Prototipo de mecanicas y feedback</option>
+                            <option value="lighting-render">Flujo de iluminacion y render</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Título
+                        <input id="admin-title" type="text" placeholder="Título del proyecto">
+                    </label>
+
+                    <label>
+                        Imagen principal
+                        <input id="admin-image" type="text" placeholder="Imagenes/.../mi-proyecto.png">
+                    </label>
+
+                    <label>
+                        Galería (separadas por coma)
+                        <input id="admin-gallery" type="text" placeholder="Imagenes/a.png, Imagenes/b.png">
+                    </label>
+
+                    <label>
+                        Etiquetas (separadas por coma)
+                        <input id="admin-tags" type="text" placeholder="UX, React, Prototipo">
+                    </label>
+
+                    <label>
+                        Duración
+                        <input id="admin-duration" type="text" placeholder="En progreso">
+                    </label>
+
+                    <label>
+                        Fecha
+                        <input id="admin-date" type="text" placeholder="2026">
+                    </label>
+
+                    <label>
+                        Herramientas
+                        <input id="admin-tools" type="text" placeholder="Unity, C#, Figma">
+                    </label>
+
+                    <label>
+                        Aprendizajes
+                        <textarea id="admin-learnings" rows="3" placeholder="En progreso"></textarea>
+                    </label>
+
+                    <label>
+                        Fallos
+                        <textarea id="admin-failures" rows="3" placeholder="En progreso"></textarea>
+                    </label>
+
+                    <label>
+                        Solución / arreglo
+                        <textarea id="admin-fix" rows="3" placeholder="En progreso"></textarea>
+                    </label>
+
+                    <label>
+                        Proceso
+                        <textarea id="admin-process" rows="3" placeholder="En progreso"></textarea>
+                    </label>
+
+                    <label>
+                        Resultados
+                        <textarea id="admin-results" rows="3" placeholder="En progreso"></textarea>
+                    </label>
+
+                    <label>
+                        Estado
+                        <input id="admin-status" type="text" placeholder="En progreso">
+                    </label>
+                </div>
+
+                <div class="admin-actions">
+                    <button type="button" id="admin-save" class="admin-button primary">Guardar cambios</button>
+                    <button type="button" id="admin-reset" class="admin-button">Reiniciar</button>
+                </div>
+            </form>
         </div>
     </section>
 
     <section id="contacto" class="inter-font contact-section">
         <h2 data-i18n="contact_title">Contacto</h2>
-        <p data-i18n="contact_desc">Listo para colaborar en proyectos de UI/UX, juego y motion graphics.</p>
+        <p data-i18n="contact_desc">Listo para colaborar en proyectos de UI/UX, experiencia digital, juego, motion graphics y emprendimiento con impacto social.</p>
         <div class="contact-links">
-            <a href="https://www.linkedin.com/in/ismael-zambrano-653b6524b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/ismael-zambrano/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="https://www.youtube.com/@IsmaelZUSFQMI" target="_blank" rel="noopener noreferrer">YouTube</a>
             <a href="mailto:ismaelz@ashenthread.com">Email</a>
         </div>
@@ -347,18 +478,419 @@
         </p>
     </footer>
 
+    <div id="project-modal" class="project-modal" aria-hidden="true">
+        <div class="project-modal-backdrop" data-close-modal="true"></div>
+        <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+            <button class="project-modal-close" type="button" aria-label="Cerrar detalle del proyecto">×</button>
+            <div id="project-modal-content"></div>
+        </div>
+    </div>
+
     <script>
         const filterBtns = document.querySelectorAll('.filter-btn');
         let portfolioItems = document.querySelectorAll('.portfolio-item');
         const langBtns = document.querySelectorAll('.lang-btn');
+
+        const projectCatalog = {
+            'unity-lighting': {
+                title: 'Iluminación y render en Unity',
+                image: 'Imagenes/Unity_IMG/LuzYRenderUN.png',
+                gallery: ['Imagenes/Unity_IMG/LuzYRenderUN.png', 'Imagenes/Unity_IMG/LevelD1.png'],
+                tags: ['Unity', 'Lighting', 'Render'],
+                duration: 'En progreso',
+                date: 'En progreso',
+                tools: 'Unity, URP, C#, lighting, post-processing',
+                learnings: 'En progreso',
+                failures: 'En progreso',
+                fix: 'En progreso',
+                process: 'En progreso',
+                results: 'En progreso',
+                status: 'En progreso'
+            },
+            'level-design': {
+                title: 'Diseño de nivel 3D',
+                image: 'Imagenes/Unity_IMG/LevelD1.png',
+                gallery: ['Imagenes/Unity_IMG/LevelD1.png', 'Imagenes/Unity_IMG/GameMecanics1.png'],
+                tags: ['Unity', 'Level Design', '3D'],
+                duration: 'En progreso',
+                date: 'En progreso',
+                tools: 'Unity, C#, prototipado de nivel, composición espacial',
+                learnings: 'En progreso',
+                failures: 'En progreso',
+                fix: 'En progreso',
+                process: 'En progreso',
+                results: 'En progreso',
+                status: 'En progreso'
+            },
+            'game-mechanics': {
+                title: 'Sistema de mecánicas',
+                image: 'Imagenes/Unity_IMG/GameMecanics1.png',
+                gallery: ['Imagenes/Unity_IMG/GameMecanics1.png', 'Imagenes/Unity_IMG/Slenderman1UN.png'],
+                tags: ['Unity', 'Game Design', 'Mecánicas'],
+                duration: 'En progreso',
+                date: 'En progreso',
+                tools: 'Unity, C#, físicas, pruebas de interacción',
+                learnings: 'En progreso',
+                failures: 'En progreso',
+                fix: 'En progreso',
+                process: 'En progreso',
+                results: 'En progreso',
+                status: 'En progreso'
+            },
+            'hud-suspense': {
+                title: 'Prototipo HUD de suspenso',
+                image: 'Imagenes/Unity_IMG/Slenderman1UN.png',
+                gallery: ['Imagenes/Unity_IMG/Slenderman1UN.png', 'Imagenes/Unity_IMG/LuzYRenderUN.png'],
+                tags: ['Unity', 'UI', 'Horror Design'],
+                duration: 'En progreso',
+                date: 'En progreso',
+                tools: 'Unity, UI, UX, feedback visual, testing',
+                learnings: 'En progreso',
+                failures: 'En progreso',
+                fix: 'En progreso',
+                process: 'En progreso',
+                results: 'En progreso',
+                status: 'En progreso'
+            },
+            'motion-reel': {
+                title: 'Reel de motion graphics',
+                image: 'Imagenes/Motion_IMG/ScreenShotReelMG.png',
+                gallery: ['Imagenes/Motion_IMG/ScreenShotReelMG.png'],
+                tags: ['After Effects', 'Animation', 'Design'],
+                duration: 'En progreso',
+                date: 'En progreso',
+                tools: 'After Effects, Illustrator, Premiere Pro',
+                learnings: 'En progreso',
+                failures: 'En progreso',
+                fix: 'En progreso',
+                process: 'En progreso',
+                results: 'En progreso',
+                status: 'En progreso'
+            },
+            'sea-lions': {
+                title: 'Leones marinos Galápagos',
+                image: 'Imagenes/Motion_IMG/LenonesMarinosMG.png',
+                gallery: ['Imagenes/Motion_IMG/LenonesMarinosMG.png'],
+                tags: ['After Effects', 'Branding', 'Social'],
+                duration: 'En progreso',
+                date: 'En progreso',
+                tools: 'After Effects, Illustrator, Premiere Pro',
+                learnings: 'En progreso',
+                failures: 'En progreso',
+                fix: 'En progreso',
+                process: 'En progreso',
+                results: 'En progreso',
+                status: 'En progreso'
+            },
+            'conecta-ecuador': {
+                title: 'Conecta Ecuador',
+                image: 'Imagenes/Conecta_Ecuador/conecta-ecuador-horizontal.png',
+                gallery: ['Imagenes/Conecta_Ecuador/conecta-ecuador-horizontal.png', 'Imagenes/Conecta_Ecuador/conecta-ecuador-logo.png'],
+                tags: ['UX', 'React', 'Emprendimiento'],
+                duration: 'En progreso',
+                date: 'En progreso',
+                tools: 'Figma, React, Vite, Tailwind CSS, UX research',
+                learnings: 'En progreso',
+                failures: 'En progreso',
+                fix: 'En progreso',
+                process: 'En progreso',
+                results: 'En progreso',
+                status: 'En progreso'
+            },
+            'undercooked': {
+                title: 'UnderCooked',
+                image: 'https://img.youtube.com/vi/DoolV4bp-80/maxresdefault.jpg',
+                gallery: ['https://img.youtube.com/vi/DoolV4bp-80/maxresdefault.jpg'],
+                tags: ['Unity', 'Gameplay', 'Prototipo'],
+                duration: '36 horas',
+                date: 'Interact2Hack',
+                tools: 'Unity, C#, gyroscope input, gameplay design, prototyping',
+                learnings: 'En progreso',
+                failures: 'En progreso',
+                fix: 'En progreso',
+                process: 'En progreso',
+                results: 'En progreso',
+                status: 'En progreso'
+            },
+            'horror-system': {
+                title: 'Sistema de interacción de horror',
+                image: 'Imagenes/Unity_IMG/Slenderman1UN.png',
+                gallery: ['Imagenes/Unity_IMG/Slenderman1UN.png'],
+                tags: ['Unity', 'UI', 'Horror'],
+                duration: 'En progreso',
+                date: 'En progreso',
+                tools: 'Unity, C#, UX, diseño de HUD, audio reactivo',
+                learnings: 'En progreso',
+                failures: 'En progreso',
+                fix: 'En progreso',
+                process: 'En progreso',
+                results: 'En progreso',
+                status: 'En progreso'
+            },
+            'sea-lions-campaign': {
+                title: 'Campaña Leones Marinos Galápagos',
+                image: 'Imagenes/Motion_IMG/LenonesMarinosMG.png',
+                gallery: ['Imagenes/Motion_IMG/LenonesMarinosMG.png'],
+                tags: ['Motion', 'Brand', 'Social'],
+                duration: 'En progreso',
+                date: 'En progreso',
+                tools: 'After Effects, Illustrator, Premiere Pro',
+                learnings: 'En progreso',
+                failures: 'En progreso',
+                fix: 'En progreso',
+                process: 'En progreso',
+                results: 'En progreso',
+                status: 'En progreso'
+            },
+            'mechanics-feedback': {
+                title: 'Prototipo de mecánicas y feedback',
+                image: 'Imagenes/Unity_IMG/GameMecanics1.png',
+                gallery: ['Imagenes/Unity_IMG/GameMecanics1.png'],
+                tags: ['Unity', 'Gameplay', 'Feedback'],
+                duration: 'En progreso',
+                date: 'En progreso',
+                tools: 'Unity, C#, físicas 3D, pruebas de iteración',
+                learnings: 'En progreso',
+                failures: 'En progreso',
+                fix: 'En progreso',
+                process: 'En progreso',
+                results: 'En progreso',
+                status: 'En progreso'
+            },
+            'lighting-render': {
+                title: 'Flujo de iluminación y render',
+                image: 'Imagenes/Unity_IMG/LuzYRenderUN.png',
+                gallery: ['Imagenes/Unity_IMG/LuzYRenderUN.png'],
+                tags: ['Unity', 'Lighting', 'URP'],
+                duration: 'En progreso',
+                date: 'En progreso',
+                tools: 'Unity, URP, post-processing, optimización',
+                learnings: 'En progreso',
+                failures: 'En progreso',
+                fix: 'En progreso',
+                process: 'En progreso',
+                results: 'En progreso',
+                status: 'En progreso'
+            }
+        };
+
+        function fallbackText(value) {
+            if (!value || !String(value).trim()) return 'En progreso';
+            return value;
+        }
+
+        function getStoredProjects() {
+            try {
+                const json = localStorage.getItem('ashenthread_project_details');
+                return json ? JSON.parse(json) : {};
+            } catch (error) {
+                return {};
+            }
+        }
+
+        function saveStoredProjects(data) {
+            localStorage.setItem('ashenthread_project_details', JSON.stringify(data));
+        }
+
+        function mergeProjectData(projectId, data) {
+            const stored = getStoredProjects();
+            stored[projectId] = { ...projectCatalog[projectId], ...data };
+            saveStoredProjects(stored);
+            return stored[projectId];
+        }
+
+        function getProjectById(projectId) {
+            const stored = getStoredProjects();
+            return stored[projectId] || projectCatalog[projectId];
+        }
+
+        function renderProjectModal(projectId) {
+            const modal = document.getElementById('project-modal');
+            const content = document.getElementById('project-modal-content');
+            const project = getProjectById(projectId);
+            if (!modal || !content || !project) return;
+
+            const galleryHtml = (project.gallery || []).map((image) => `
+                <img src="${image}" alt="${project.title}" class="project-gallery-image" loading="lazy">
+            `).join('');
+
+            const detailRows = [
+                ['Duración', fallbackText(project.duration)],
+                ['Fecha', fallbackText(project.date)],
+                ['Herramientas', fallbackText(project.tools)],
+                ['Aprendizajes', fallbackText(project.learnings)],
+                ['Fallos', fallbackText(project.failures)],
+                ['Solución', fallbackText(project.fix)],
+                ['Proceso', fallbackText(project.process)],
+                ['Resultados', fallbackText(project.results)]
+            ];
+
+            const rowsHtml = detailRows.map(([label, value]) => `
+                <div class="project-detail-row">
+                    <dt>${label}</dt>
+                    <dd>${value}</dd>
+                </div>
+            `).join('');
+
+            const tagsHtml = (project.tags || []).map((tag) => `<span class="tag">${tag}</span>`).join('');
+
+            content.innerHTML = `
+                <div class="project-modal-header">
+                    <div>
+                        <span class="project-status">${fallbackText(project.status)}</span>
+                        <h2 id="project-modal-title">${project.title}</h2>
+                    </div>
+                </div>
+                <div class="project-modal-media">
+                    <img src="${project.image}" alt="${project.title}">
+                </div>
+                <div class="project-modal-tags">${tagsHtml}</div>
+                <dl class="project-details-list">${rowsHtml}</dl>
+                <div class="project-gallery-grid">${galleryHtml || '<p class="empty-gallery">En progreso</p>'}</div>
+            `;
+
+            modal.classList.add('open');
+            modal.setAttribute('aria-hidden', 'false');
+        }
+
+        function closeProjectModal() {
+            const modal = document.getElementById('project-modal');
+            if (!modal) return;
+            modal.classList.remove('open');
+            modal.setAttribute('aria-hidden', 'true');
+        }
+
+        document.querySelectorAll('.project-card').forEach((card) => {
+            card.addEventListener('click', () => {
+                const projectId = card.getAttribute('data-project');
+                renderProjectModal(projectId);
+            });
+
+            card.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    const projectId = card.getAttribute('data-project');
+                    renderProjectModal(projectId);
+                }
+            });
+
+            card.setAttribute('tabindex', '0');
+            card.setAttribute('role', 'button');
+            card.setAttribute('aria-label', 'Abrir detalle del proyecto');
+        });
+
+        document.querySelector('[data-close-modal]').addEventListener('click', closeProjectModal);
+        document.querySelector('.project-modal-close').addEventListener('click', closeProjectModal);
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') closeProjectModal();
+        });
+
+        document.getElementById('project-modal').addEventListener('click', (event) => {
+            if (event.target === event.currentTarget) closeProjectModal();
+        });
+
+        const adminProjectSelect = document.getElementById('admin-project-select');
+        const adminTitle = document.getElementById('admin-title');
+        const adminImage = document.getElementById('admin-image');
+        const adminGallery = document.getElementById('admin-gallery');
+        const adminTags = document.getElementById('admin-tags');
+        const adminDuration = document.getElementById('admin-duration');
+        const adminDate = document.getElementById('admin-date');
+        const adminTools = document.getElementById('admin-tools');
+        const adminLearnings = document.getElementById('admin-learnings');
+        const adminFailures = document.getElementById('admin-failures');
+        const adminFix = document.getElementById('admin-fix');
+        const adminProcess = document.getElementById('admin-process');
+        const adminResults = document.getElementById('admin-results');
+        const adminStatus = document.getElementById('admin-status');
+
+        function fillAdminForm(projectId) {
+            const project = getProjectById(projectId);
+            if (!project) return;
+            adminTitle.value = project.title || '';
+            adminImage.value = project.image || '';
+            adminGallery.value = (project.gallery || []).join(', ');
+            adminTags.value = (project.tags || []).join(', ');
+            adminDuration.value = project.duration || '';
+            adminDate.value = project.date || '';
+            adminTools.value = project.tools || '';
+            adminLearnings.value = project.learnings || '';
+            adminFailures.value = project.failures || '';
+            adminFix.value = project.fix || '';
+            adminProcess.value = project.process || '';
+            adminResults.value = project.results || '';
+            adminStatus.value = project.status || '';
+        }
+
+        function resetAdminForm() {
+            if (!adminProjectSelect) return;
+            adminProjectSelect.selectedIndex = 0;
+            fillAdminForm(adminProjectSelect.value);
+        }
+
+        if (adminProjectSelect) {
+            adminProjectSelect.addEventListener('change', () => fillAdminForm(adminProjectSelect.value));
+            fillAdminForm(adminProjectSelect.value);
+        }
+
+        document.getElementById('admin-save')?.addEventListener('click', () => {
+            const projectId = adminProjectSelect.value;
+            const updated = mergeProjectData(projectId, {
+                title: adminTitle.value.trim() || 'En progreso',
+                image: adminImage.value.trim() || projectCatalog[projectId].image,
+                gallery: adminGallery.value.split(',').map(item => item.trim()).filter(Boolean) || [projectCatalog[projectId].image],
+                tags: adminTags.value.split(',').map(item => item.trim()).filter(Boolean) || projectCatalog[projectId].tags,
+                duration: adminDuration.value.trim() || 'En progreso',
+                date: adminDate.value.trim() || 'En progreso',
+                tools: adminTools.value.trim() || 'En progreso',
+                learnings: adminLearnings.value.trim() || 'En progreso',
+                failures: adminFailures.value.trim() || 'En progreso',
+                fix: adminFix.value.trim() || 'En progreso',
+                process: adminProcess.value.trim() || 'En progreso',
+                results: adminResults.value.trim() || 'En progreso',
+                status: adminStatus.value.trim() || 'En progreso'
+            });
+
+            const card = document.querySelector(`[data-project="${projectId}"]`);
+            if (card) {
+                const heading = card.querySelector('h3');
+                const paragraph = card.querySelector('p');
+                const tagContainer = card.querySelector('.portfolio-tags');
+                if (heading) heading.textContent = updated.title;
+                if (paragraph && updated.title) paragraph.textContent = updated.results || 'En progreso';
+                if (tagContainer) {
+                    tagContainer.innerHTML = (updated.tags || []).slice(0, 3).map(tag => `<span class="tag">${tag}</span>`).join('');
+                }
+                const imageNode = card.querySelector('img');
+                if (imageNode && updated.image) imageNode.src = updated.image;
+            }
+
+            renderProjectModal(projectId);
+            alert('Proyecto actualizado localmente. Los cambios quedan guardados en este navegador.');
+        });
+
+        document.getElementById('admin-reset')?.addEventListener('click', resetAdminForm);
+
+        document.getElementById('toggle-admin')?.addEventListener('click', () => {
+            const editor = document.getElementById('project-editor');
+            const btn = document.getElementById('toggle-admin');
+            const isHidden = editor.hasAttribute('hidden');
+            if (isHidden) {
+                editor.removeAttribute('hidden');
+                btn.textContent = 'Ocultar editor local';
+            } else {
+                editor.setAttribute('hidden', 'hidden');
+                btn.textContent = 'Mostrar editor local';
+            }
+        });
 
         const i18n = {
             es: {
                 nav_home: 'Inicio', nav_about: 'Sobre mi', nav_projects: 'Proyectos', nav_guide: 'Guia', nav_contact: 'Contacto',
                 hero_title: 'Portafolio', hero_desc: 'Diseno experiencias de juego con enfoque en tension, legibilidad y narrativa visual. Esta version integra direccion de marca y proyectos recientes de Unity, UI y motion graphics.',
                 hero_metric_projects: 'Proyectos', hero_metric_disciplines: 'Disciplinas', hero_metric_vision: 'Vision',
-                about_title: 'Sobre mi', about_role: 'Estudiante de Media Interactiva | Disenador UI/UX | Disenador de Videojuegos | Artista de Motion Graphics',
-                about_who_title: 'Quien soy', about_who_desc: 'Soy un creativo enfocado en productos digitales inmersivos. Mi base en psicologia me ayuda a disenar con enfoque humano, mientras construyo identidad visual fuerte y narrativa clara.',
+                about_title: 'Sobre mi', about_role: 'Estudiante de Medios Interactivos - USFQ | Desarrollo Front-end | UX/UI | Game Development en Unity | Motion Graphics en After Effects | Edicion de video en Premiere Pro',
+                about_who_title: 'Quien soy', about_who_desc: 'Soy un creativo enfocado en productos digitales inmersivos. Mi base en psicologia me ayuda a disenar con enfoque humano, mientras construyo soluciones para la vida digital, la experiencia de usuario, el juego y la comunicación visual con impacto real.',
                 about_education_title: 'Formacion',
                 about_education_1: 'USFQ - Media Interactiva (3er semestre). Enfoque en UI/UX, motion graphics, game design y desarrollo web.',
                 about_education_2: 'UISEK - Psicologia General (2 anos). Base en conducta, cognicion y factores humanos.',
@@ -387,7 +919,9 @@
                 grid_4_title: 'Prototipo HUD de suspenso', grid_4_desc: 'HUD con visibilidad en baja luz, jerarquia de riesgo y feedback inmediato para escenas de alto estres.',
                 grid_5_title: 'Reel de motion graphics', grid_5_desc: 'Reel con simulaciones de liquido/gravedad, assets vectoriales y postproduccion en After Effects.',
                 grid_6_title: 'Leones marinos Galapagos', grid_6_desc: 'Proyecto con cliente real y lineamientos de marca estrictos para contenido audiovisual en redes.',
-                tag_level: 'Diseno de niveles', tag_readability: 'Legibilidad UX', tag_game: 'Diseno de juego', tag_mechanics: 'Mecanicas', tag_ui_unity: 'UI en Unity', tag_ux_research: 'Investigacion UX', tag_horror: 'Diseno de horror', tag_animation: 'Animacion', tag_design: 'Diseno', tag_brand_system: 'Sistema de marca',
+                grid_7_title: 'Conecta Ecuador', grid_7_desc: 'Plataforma de emprendimiento que conecta a adultos mayores con agentes verificados para tramites, alfabetizacion digital y apoyo cotidiano con enfoque accesible y humano.',
+                grid_8_title: 'UnderCooked', grid_8_desc: 'Juego móvil desarrollado en 36 horas para el Interact2Hack, donde el giroscopio es el único input. Diseñé la arquitectura, la lógica y la experiencia del juego para una mecánica rápida, creativa y divertida.',
+                tag_level: 'Diseno de niveles', tag_readability: 'Legibilidad UX', tag_game: 'Diseno de juego', tag_mechanics: 'Mecanicas', tag_ui_unity: 'UI en Unity', tag_ux_research: 'Investigacion UX', tag_horror: 'Diseno de horror', tag_animation: 'Animacion', tag_design: 'Diseno', tag_brand_system: 'Sistema de marca', tag_emprendimiento: 'Emprendimiento', tag_gameplay: 'Gameplay', tag_prototipo: 'Prototipo',
                 guide_title: 'Guia para agregar proyectos nuevos', guide_intro: 'Usa esta estructura para escalar el portafolio con proyectos recientes de forma ordenada y consistente.',
                 guide_step1_title: '1. Prepara tus archivos', guide_step1_1: 'Imagen principal: 1600x900 (o 1920x1080), formato JPG/PNG.', guide_step1_2: 'Video opcional: link de YouTube/Vimeo.', guide_step1_3: 'Nombra por proyecto: proyecto-nombre-01.png.',
                 guide_step2_title: '2. Completa la ficha del proyecto', guide_step2_1: 'Nombre del proyecto.', guide_step2_2: 'Tipo: Unity, Motion Graphics, UI/UX, Web, Game Design, Branding.', guide_step2_3: 'Rol: que hiciste tu directamente.', guide_step2_4: 'Herramientas: Unity, C#, After Effects, Illustrator, Premiere, HTML/CSS/JS.', guide_step2_5: 'No usar Blender en la descripcion de herramientas.',
@@ -409,8 +943,8 @@
                 nav_home: 'Home', nav_about: 'About', nav_projects: 'Projects', nav_guide: 'Guide', nav_contact: 'Contact',
                 hero_title: 'Portfolio', hero_desc: 'I design game experiences focused on tension, readability, and visual narrative. This version integrates stronger brand direction and recent Unity, UI, and motion graphics projects.',
                 hero_metric_projects: 'Projects', hero_metric_disciplines: 'Disciplines', hero_metric_vision: 'Vision',
-                about_title: 'About me', about_role: 'Interactive Media Student | UI/UX Designer | Game Designer | Motion Graphics Artist',
-                about_who_title: 'Who I am', about_who_desc: 'I am a creative focused on immersive digital products. My psychology background helps me design with a human-centered approach while building strong visual identity and clear storytelling.',
+                about_title: 'About me', about_role: 'Interactive Media Student - USFQ | Front-end Development | UX/UI | Game Development in Unity | Motion Graphics in After Effects | Video Editing in Premiere Pro',
+                about_who_title: 'Who I am', about_who_desc: 'I am a creative focused on immersive digital products. My psychology background helps me design with a human-centered approach while building functional experiences for digital life, user experience, games, and visual communication with real-world impact.',
                 about_education_title: 'Education',
                 about_education_1: 'USFQ - Interactive Media (3rd semester). Focus on UI/UX, motion graphics, game design, and web development.',
                 about_education_2: 'UISEK - General Psychology (2 years). Foundation in behavior, cognition, and human factors.',
@@ -439,7 +973,9 @@
                 grid_4_title: 'Suspense HUD Prototype', grid_4_desc: 'HUD with low-light visibility, risk hierarchy, and immediate feedback for high-stress scenes.',
                 grid_5_title: 'Motion Graphics Reel', grid_5_desc: 'Reel with liquid/gravity simulations, vector assets, and full post-production in After Effects.',
                 grid_6_title: 'Galapagos Sea Lions', grid_6_desc: 'Real-client project with strict branding guidelines for audiovisual social content.',
-                tag_level: 'Level Design', tag_readability: 'UX Readability', tag_game: 'Game Design', tag_mechanics: 'Mechanics', tag_ui_unity: 'Unity UI', tag_ux_research: 'UX Research', tag_horror: 'Horror Design', tag_animation: 'Animation', tag_design: 'Design', tag_brand_system: 'Brand System',
+                grid_7_title: 'Conecta Ecuador', grid_7_desc: 'Entrepreneurship platform connecting older adults with verified agents for paperwork, digital literacy, and everyday support through an accessible and human-centered experience.',
+                grid_8_title: 'UnderCooked', grid_8_desc: 'Mobile game developed in 36 hours for Interact2Hack, where the gyroscope is the only input. I designed the architecture, gameplay logic, and interaction flow for a fast, creative, and playful mechanic.',
+                tag_level: 'Level Design', tag_readability: 'UX Readability', tag_game: 'Game Design', tag_mechanics: 'Mechanics', tag_ui_unity: 'Unity UI', tag_ux_research: 'UX Research', tag_horror: 'Horror Design', tag_animation: 'Animation', tag_design: 'Design', tag_brand_system: 'Brand System', tag_emprendimiento: 'Entrepreneurship', tag_gameplay: 'Gameplay', tag_prototipo: 'Prototype',
                 guide_title: 'Guide to add new projects', guide_intro: 'Use this structure to scale your portfolio with recent work in a consistent way.',
                 guide_step1_title: '1. Prepare your files', guide_step1_1: 'Main image: 1600x900 (or 1920x1080), JPG/PNG.', guide_step1_2: 'Optional video: YouTube/Vimeo link.', guide_step1_3: 'Name by project: project-name-01.png.',
                 guide_step2_title: '2. Complete project metadata', guide_step2_1: 'Project name.', guide_step2_2: 'Type: Unity, Motion Graphics, UI/UX, Web, Game Design, Branding.', guide_step2_3: 'Role: what you directly did.', guide_step2_4: 'Tools: Unity, C#, After Effects, Illustrator, Premiere, HTML/CSS/JS.', guide_step2_5: 'Do not use Blender in the tools description.',
